@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png">
-<meta property="og:updated_time" content="2020-12-29T17:24:27.216Z">
+<meta property="og:updated_time" content="2020-12-29T17:33:14.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github 搭建博客记录">
 <meta name="twitter:description" content="闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果核">
@@ -243,8 +243,8 @@
 <p>闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p><div class="admonition warning"></div></p>
-<p></p><p class="admonition-title">warning</p><br>    <p>本博客在 Window10 环境下搭建。</p><br><p></p>
+<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><pre><code class="html">本博客在 Window10 环境下搭建。
+</code></pre>
 <ul>
 <li>安装 Git、Node.js</li>
 </ul>
@@ -330,11 +330,6 @@
 </blockquote>
 <p>在浏览器输入<code>localhost:4000</code>，可浏览本地博客效果：</p>
 <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg" alt title="效果图"></p>
-<center><br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;"><b>效果图</b></div><br>    <br><br></center>
-
 <p>按 <code>Ctrl+C</code> 可关闭 server。</p>
 <h2 id="博客写作"><a href="#博客写作" class="headerlink" title="博客写作"></a>博客写作</h2><ul>
 <li>新增博客</li>
@@ -382,7 +377,7 @@ top: 3 #自定义文章排序
   branch: master
 </code></pre>
 <blockquote>
-<p>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github</code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：<a href="mailto:`git@github.com" target="_blank" rel="noopener">`git@github.com</a>:User/User.github.io.git` </p>
+<p>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github</code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：git@githu .com:User/User.github.io.git` </p>
 </blockquote>
 <h2 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h2><ul>
 <li>配置 SSH Key</li>
@@ -450,7 +445,7 @@ git config --global user.name&quot;Your Name&quot;</code>，则按提示依次�
         <p><span>本文标题:</span><a href="/2020/12/20/Hexo+Github搭建博客记录/">Hexo+Github 搭建博客记录</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
         <p><span>发布时间:</span>2020年12月20日 - 01时17分</p>
-        <p><span>最后更新:</span>2020年12月29日 - 17时24分</p>
+        <p><span>最后更新:</span>2020年12月29日 - 17时33分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2020/12/20/Hexo+Github搭建博客记录/" title="Hexo+Github 搭建博客记录">/2020/12/20/Hexo+Github搭建博客记录/</a>
             <span class="copy-path" data-clipboard-text="原文: /2020/12/20/Hexo+Github搭建博客记录/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
