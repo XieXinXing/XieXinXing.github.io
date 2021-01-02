@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-01_1609500851.png">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-02_1609595409.png">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-02_1609595296.png">
-<meta property="og:updated_time" content="2021-01-02T15:04:08.908Z">
+<meta property="og:updated_time" content="2021-01-02T15:15:03.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown + 阿里云图床">
 <meta name="twitter:description" content="引言：虽然我一直在用 Snipaste，但我主要使用截图后贴图功能，可以很方便进行对比查看，其编辑样式也比较好看。但是 Snipaste 不支持滚动截图，而且编辑样式没有阴影。其实滚动截图倒是不常用，而且 FSCapture 就足够。只是我一直想找一个能截图自带阴影的截图工具。用了 Winsnap，感觉阴影感一般。似乎 Ashampoo Snap 也可以，但没深入使用。Snagit 编辑功能比">
@@ -303,15 +303,15 @@ cmd /k &quot;cd /d D:\Install\ForCode\ossutil64 &amp;&amp; ossutil64 cp %p1% oss
 </code></pre>
 <blockquote>
 <p>MD 中以 <code>![]()</code> 方式插入如图片不支持大小和位置修改，但是 MD 支持 Html ，可以使用以下格式控制图片大小和左右居中位置：</p>
-<p>\<div align="center">\<img src="imagepath" width="600"></div></p>
-<p>因此上述 Bat 文件中最后的命令可以修改为：</p>
+<p>\<div align="center">\<img src="imagepath" width="600" height="600">\</div></p>
+<p>因此上述 Bat 文件中最后的命令也可以修改为：</p>
 <pre><code class="bat">@ECHO OFF
 set para1=%1
 set p1=%para1:&quot;=%
 set p2=%para1:~37,-1%
 set p3=%para1:~1,36%
 cmd /k &quot;cd /d D:\Install\ForCode\ossutil64 &amp;&amp; ossutil64 cp %p1% oss://kisun-pic/ossutil/ &amp;&amp; exit&quot;
-set/p=&quot;&lt;div align=center&gt;&lt;img src=https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/%p2% width=600&lt;/div&gt;&quot;&lt;nul | clip
+set/p=&quot;&lt;div align=center&gt;&lt;img src=&quot;https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/%p2%&quot; width=&quot;600&quot; height=&quot;300&quot;&gt;&lt;/div&gt;&quot;&lt;nul | clip
 </code></pre>
 </blockquote>
 <p>然后打开 sharex 根据下图配置：</p>
@@ -352,7 +352,7 @@ set/p=&quot;&lt;div align=center&gt;&lt;img src=https://kisun-pic.oss-cn-shenzhe
         <p><span>本文标题:</span><a href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
         <p><span>发布时间:</span>2021年01月01日 - 21时40分</p>
-        <p><span>最后更新:</span>2021年01月02日 - 15时04分</p>
+        <p><span>最后更新:</span>2021年01月02日 - 15时15分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2021/01/01/Markdown+阿里云图床/" title="Markdown + 阿里云图床">/2021/01/01/Markdown+阿里云图床/</a>
             <span class="copy-path" data-clipboard-text="原文: /2021/01/01/Markdown+阿里云图床/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
