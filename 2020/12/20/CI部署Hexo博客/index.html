@@ -9,7 +9,7 @@
 <meta name="keywords" content="笔记,编程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自动部署 Hexo 静态博客">
-<meta property="og:url" content="/2020/12/20/CI 部署 Hexo 博客/index.html">
+<meta property="og:url" content="/2020/12/20/CI部署Hexo博客/index.html">
 <meta property="og:site_name" content="谢欣欣已经长大">
 <meta property="og:description" content="原本根据 Hexo的版本控制与持续集成，想要使用 AppVeyor 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。后来根据 将 Hexo 部署到 GitHub Pages，成功利用 Travis CI 将源码备份到 Github 仓库，并实现自动编译部署到分支。再后来了解到 Github Action 本身就具有免费的 CI 功能，于是实现将">
 <meta property="og:locale" content="zh-cn">
@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012250184.png">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012315603.png">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230010305353.png">
-<meta property="og:updated_time" content="2021-01-02T09:58:32.830Z">
+<meta property="og:updated_time" content="2021-01-02T14:00:37.309Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自动部署 Hexo 静态博客">
 <meta name="twitter:description" content="原本根据 Hexo的版本控制与持续集成，想要使用 AppVeyor 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。后来根据 将 Hexo 部署到 GitHub Pages，成功利用 Travis CI 将源码备份到 Github 仓库，并实现自动编译部署到分支。再后来了解到 Github Action 本身就具有免费的 CI 功能，于是实现将">
@@ -211,10 +211,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-CI 部署 Hexo 博客" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-CI部署Hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2020/12/20/CI 部署 Hexo 博客/" class="article-date">
+      <a href="/2020/12/20/CI部署Hexo博客/" class="article-date">
       <time datetime="2020-12-20T01:17:32.000Z" itemprop="datePublished">2020-12-20</time>
 </a>
     </div>
@@ -396,11 +396,12 @@ jobs:
 <p>然后就成功了：</p>
 <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229235239701.png" alt="image-20201229235239701"></p>
 <p>之后就可以看到博客的更新了。今后可以在源码仓库直接修改文件或者本地修改后推送到源码仓库，就会自动构建然后推送到博客仓库，一来备份了源码，二来免去部署步骤。</p>
+<hr>
 <p>在我更新两篇文章后，Action 出现以下错误：</p>
 <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011102921.png" alt="image-20201230011102921"></p>
 <p>改了改又后来出现错误：</p>
 <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012250184.png" alt="image-20201230012250184"></p>
-<p>搜索后发现办法：</p>
+<p>搜索后发现原因和办法：</p>
 <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012315603.png" alt="image-20201230012315603"></p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h3 id="使用自定义域名访问"><a href="#使用自定义域名访问" class="headerlink" title="使用自定义域名访问"></a>使用自定义域名访问</h3><p>你可以使用自己的域名来访问 GitHub Pages 服务，只需在 hexo 项目的 <code>source</code> 目录下添加 <code>CNANE</code> 文件。</p>
 <p><code>CNANE</code> 文件内容为自定义域名，例如：xxx.xxx.cn，然后在仓库 <code>Settings</code> 开启<strong>域名 https 协议</strong>。</p>
@@ -425,13 +426,13 @@ jobs:
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2020/12/20/CI 部署 Hexo 博客/">自动部署 Hexo 静态博客</a></p>
+        <p><span>本文标题:</span><a href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
         <p><span>发布时间:</span>2020年12月20日 - 01时17分</p>
-        <p><span>最后更新:</span>2021年01月02日 - 09时58分</p>
+        <p><span>最后更新:</span>2021年01月02日 - 14时00分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/12/20/CI 部署 Hexo 博客/" title="自动部署 Hexo 静态博客">/2020/12/20/CI 部署 Hexo 博客/</a>
-            <span class="copy-path" data-clipboard-text="原文: /2020/12/20/CI 部署 Hexo 博客/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2020/12/20/CI部署Hexo博客/" title="自动部署 Hexo 静态博客">/2020/12/20/CI部署Hexo博客/</a>
+            <span class="copy-path" data-clipboard-text="原文: /2020/12/20/CI部署Hexo博客/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -454,7 +455,7 @@ jobs:
     </a>
   
   
-    <a href="/2020/12/20/Hexo+Github搭建博客记录/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/12/20/Hexo+Github搭建博客/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Hexo+Github 搭建博客记录</div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -538,12 +539,12 @@ jobs:
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2020/12/20/Hexo+Github搭建博客记录/" title="下一篇: Hexo+Github 搭建博客记录">
+            <a href="/2020/12/20/Hexo+Github搭建博客/" title="下一篇: Hexo+Github 搭建博客记录">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Typora+ShareX or PicGo+Aliyun/">Typora + Sharex or PicGo + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI 部署 Hexo 博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客记录/">Hexo+Github 搭建博客记录</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
