@@ -3,22 +3,25 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>comment | 谢欣欣已经长大</title>
+  <title>jsDelivr+Github搭建CDN图床 | 谢欣欣已经长大</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》">
-<meta name="keywords" content="留言板">
-<meta property="og:type" content="website">
-<meta property="og:title" content="comment">
-<meta property="og:url" content="/comment/index.html">
+  <meta name="description" content="引言：在搭建博客的过程中，时常需要插入图片，总是在很多地方提到 CDN 加速服务，于是了解过后尝试引入 CDN 加速。由于文章插入我使用 Typora + 阿里云OSS，而阿里云 CDN 是收费的，因此暂时使用开源免费的 Jsdelivr，并使用其支持的 Github 图床进行搭建。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jsDelivr+Github搭建CDN图床">
+<meta property="og:url" content="/2021/01/06/jsDelivr+Github搭建CDN图床/index.html">
 <meta property="og:site_name" content="谢欣欣已经长大">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》">
+<meta property="og:description" content="引言：在搭建博客的过程中，时常需要插入图片，总是在很多地方提到 CDN 加速服务，于是了解过后尝试引入 CDN 加速。由于文章插入我使用 Typora + 阿里云OSS，而阿里云 CDN 是收费的，因此暂时使用开源免费的 Jsdelivr，并使用其支持的 Github 图床进行搭建。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg">
-<meta property="og:updated_time" content="2021-01-06T13:35:36.081Z">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/n6xmel.jpg">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609936125.png">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229213904534.png">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609939875.png">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609939966.png">
+<meta property="og:updated_time" content="2021-01-06T13:35:36.077Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="comment">
-<meta name="twitter:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg">
+<meta name="twitter:title" content="jsDelivr+Github搭建CDN图床">
+<meta name="twitter:description" content="引言：在搭建博客的过程中，时常需要插入图片，总是在很多地方提到 CDN 加速服务，于是了解过后尝试引入 CDN 加速。由于文章插入我使用 Typora + 阿里云OSS，而阿里云 CDN 是收费的，因此暂时使用开源免费的 Jsdelivr，并使用其支持的 Github 图床进行搭建。">
+<meta name="twitter:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/n6xmel.jpg">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -42,7 +45,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -198,11 +201,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-jsDelivr+Github搭建CDN图床" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/comment/index.html" class="article-date">
-      <time datetime="2018-12-20T23:13:48.000Z" itemprop="datePublished">2018-12-20</time>
+      <a href="/2021/01/06/jsDelivr+Github搭建CDN图床/" class="article-date">
+      <time datetime="2021-01-06T20:07:22.000Z" itemprop="datePublished">2021-01-06</time>
 </a>
     </div>
   
@@ -215,7 +218,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      comment
+      jsDelivr+Github搭建CDN图床
     </h1>
   
 
@@ -223,6 +226,10 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+    </div>
+
 
         
         <div class="clearfix"></div>
@@ -232,56 +239,34 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/n6xmel.jpg"></div>
 
+<p>引言：在搭建博客的过程中，时常需要插入图片，总是在很多地方提到 CDN 加速服务，于是了解过后尝试引入 CDN 加速。由于文章插入我使用 Typora + 阿里云OSS，而阿里云 CDN 是收费的，因此暂时使用开源免费的 <a href="https://www.jsdelivr.com/?docs=gh" target="_blank" rel="noopener">Jsdelivr</a>，并使用其支持的 Github 图床进行搭建。</p>
+<a id="more"></a>
+<h1 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h1><p>根据百科：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609936125.png"></div>
 
-          
-        
-<div class="entry-content">
-  <div class="poem-wrap">
-    <div class="poem-border poem-left">
-    </div>
-    <div class="poem-border poem-right">
-    </div>
-    <h1>
-    念两句诗</h1>
-    <p id="poem">
-    叙别梦、扬州一觉。</p>
-    <p id="info">
-    【宋代】吴文英《夜游宫·人去西楼雁杳》</p>
-  </div>
-</div>
+<blockquote>
+<p>内容分发网络的总承载量可以比单一骨干最大的带宽还要大。这使得内容分发网络可以承载的用户数量比起传统单一服务器多。也就是说，若把有 100Gbps 处理能力的服务器放在只有 10Gbps 带宽的数据中心，则亦只能发挥出 10Gbps 的承载量。但如果放到十个有 10Gbps 的地点，整个系统的承载量就可以到 10*10Gbps。</p>
+<p>同时，将服务器放到不同地点，可以减少互连的流量，进而降低带宽成本。</p>
+<p>对于 <a href="https://bk.tw.lvfukeji.com/baike-传输控制协议" target="_blank" rel="noopener">TCP</a> 传输而言，TCP 的速度（throughput）会受到延迟时间（latency）与数据包漏失率（packet loss）影响。为了改善这些负面因素，内容分发网络通常会指派较近、较顺畅的服务器节点将资料传输给用户。虽然距离并不是绝对因素，但这么做可以尽可能提高性能，用户将会觉得比较顺畅。这使得一些比较高带宽的应用（传输<a href="https://bk.tw.lvfukeji.com/w/index.php?title=高清影片&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">高清视频</a>）更容易推动。</p>
+<p>内容分发网络另外一个好处在于有异地备援。当某个服务器故障时，系统将会调用其他邻近地区的服务器服务，进而提供接近 100% 的可靠度。</p>
+<p>除此之外，内容分发网络提供给服务提供者更多的控制权。提供服务的人可以针对客户、地区，或是其他因子调整。</p>
+</blockquote>
+<p>可以查看更多关于 CDN 的解释：<a href="https://www.zhihu.com/question/36514327?rf=37353035" target="_blank" rel="noopener">CDN 是什么？使用 CDN 有什么优势？</a>、<a href="https://bk.tw.lvfukeji.com/baike-%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E7%B6%B2%E8%B7%AF" target="_blank" rel="noopener">维基百科：内容分发网络</a>。</p>
+<h1 id="PicGo配置Github图床"><a href="#PicGo配置Github图床" class="headerlink" title="PicGo配置Github图床"></a>PicGo配置Github图床</h1><p>首先创建 Github <strong>Public 仓库</strong>。</p>
+<p>在<strong>用户头像处</strong>点击 <code>Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate new token</code> 创建 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github 访问令牌</a> ，<strong>名称</strong>随意，勾选 <code>repo</code> 选项，然后复制密匙：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229213904534.png"></div> 
+
+<p>然后下载 <a href="https://github.com/Molunerfinn/picgo/releases" target="_blank" rel="noopener">PicGo</a>，打开 Github 图床配置如下：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609939875.png"></div>
+
+<p>根据 Jsdelivr ：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-06_1609939966.png"></div>
+
+<p>其中自定义域名设置为：</p>
+<pre><code>https://cdn.jsdelivr.net/gh/用户名/仓库名/
+</code></pre><p>更多详情参考：<a href="https://www.jsdelivr.com/?docs=gh" target="_blank" rel="noopener">jsdelivr官网</a></p>
 
       
       
@@ -290,10 +275,67 @@
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2021/01/06/jsDelivr+Github搭建CDN图床/">jsDelivr+Github搭建CDN图床</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
+        <p><span>发布时间:</span>2021年01月06日 - 20时07分</p>
+        <p><span>最后更新:</span>2021年01月06日 - 13时35分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2021/01/06/jsDelivr+Github搭建CDN图床/" title="jsDelivr+Github搭建CDN图床">/2021/01/06/jsDelivr+Github搭建CDN图床/</a>
+            <span class="copy-path" data-clipboard-text="原文: /2021/01/06/jsDelivr+Github搭建CDN图床/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/01/Markdown+阿里云图床/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown + 阿里云图床</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CDN"><span class="toc-number">1.</span> <span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PicGo配置Github图床"><span class="toc-number">2.</span> <span class="toc-text">PicGo配置Github图床</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
 
 
 
@@ -329,6 +371,37 @@
     
 
 
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2021/01/01/Markdown+阿里云图床/" title="下一篇: Markdown + 阿里云图床">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/06/jsDelivr+Github搭建CDN图床/">jsDelivr+Github搭建CDN图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
 
 

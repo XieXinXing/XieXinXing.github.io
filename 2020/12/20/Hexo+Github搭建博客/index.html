@@ -5,21 +5,21 @@
   
   <title>Hexo+Github 搭建博客记录 | 谢欣欣已经长大</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果核">
+  <meta name="description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
 <meta name="keywords" content="Hexo,Github,Blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github 搭建博客记录">
 <meta property="og:url" content="/2020/12/20/Hexo+Github搭建博客/index.html">
 <meta property="og:site_name" content="谢欣欣已经长大">
-<meta property="og:description" content="闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果核">
+<meta property="og:description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png">
-<meta property="og:updated_time" content="2021-01-04T11:27:14.707Z">
+<meta property="og:updated_time" content="2021-01-06T13:35:36.077Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github 搭建博客记录">
-<meta name="twitter:description" content="闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果核">
+<meta name="twitter:description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
 <meta name="twitter:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg">
   
   
@@ -238,98 +238,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg" alt></p>
-<blockquote>
-<p>闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。</p>
-</blockquote>
-<a id="more"></a>
-<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><pre><code class="html">本博客在 Window10 环境下搭建。
-</code></pre>
-<ul>
-<li>安装 Git、Node.js</li>
-</ul>
-<p>下载并安装 <a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git</a>、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。除了安装路径，我全部选择默认选项安装。</p>
-<blockquote>
-<p>安装完成后可以运行以下命令行验证是否安装完成：<br><code>git --version</code><br><code>node -v</code><br><code>npm -v</code><br>若出错可尝试检查环境变量路径或重启电脑或重新安装。</p>
-</blockquote>
-<ul>
-<li>安装 Hexo</li>
-</ul>
-<p>在随意位置鼠标右键 <code>Git Bash Here</code></p>
-<blockquote>
-<p>后面提到命令若无特别说明在根目录下 <code>git bash</code> 运行。</p>
-</blockquote>
-<p>输入<code>npm install -g hexo</code>，回车安装 Hexo。</p>
-<blockquote>
-<p>其安装时间较长，若长时间未反应可参考 <a href="https://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">零基础免费搭建个人博客-hexo+github</a>中关于安装 hexo 部分：</p>
-<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
-<p><code>cnpm install -g hexo-cli</code></p>
-<p>安装过程显示 warn ：<code>npm WARN deprecated fsevents@2.1.3: Please update to v 2.2.x</code>，忽略即可：</p>
-<p><code>cnpm install hexo --save</code></p>
-<p>若出现错误，根据错误直接百度。</p>
-<p>安装完成后查看是否成功：<code>hexo -v</code></p>
-</blockquote>
-<h2 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h2><ul>
-<li>创建文件夹</li>
-</ul>
-<p>根据自己情况选择合适位置建立文件夹用以存放相应文件，例：<code>D:\Blog</code>。</p>
-<ul>
-<li>初始化 hexo</li>
-</ul>
-<p>在Blog文件下，右键<code>Git Bash Here</code>，输入命令：<code>hexo init</code>，进行初始化。</p>
-<ul>
-<li>初始配置</li>
-</ul>
-<p>打开根文件夹下的<code>_config.yml</code>文件，进行基础配置。</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td style="text-align:center">网站标题</td>
-</tr>
-<tr>
-<td>subtitle</td>
-<td style="text-align:center">网站副标题</td>
-</tr>
-<tr>
-<td>description</td>
-<td style="text-align:center">网站描述</td>
-</tr>
-<tr>
-<td>keywords</td>
-<td style="text-align:center">网站的关键词。支援多个关键词。</td>
-</tr>
-<tr>
-<td>author</td>
-<td style="text-align:center">作者名字</td>
-</tr>
-<tr>
-<td>language</td>
-<td style="text-align:center">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。</td>
-</tr>
-<tr>
-<td>timezon</td>
-<td style="text-align:center">网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。</td>
-</tr>
-</tbody>
-</table>
-<p>更多配置参考：<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档</a></p>
-<ul>
-<li>浏览本地博客</li>
-</ul>
-<p>运行以下命令：</p>
-<p><code>hexo g</code><br><code>hexo s</code></p>
-<blockquote>
-<p>更多 hexo 命令参考：<a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令笔记</a></p>
-</blockquote>
-<p>在浏览器输入<code>localhost:4000</code>，可浏览本地博客效果：</p>
-<p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg" alt title="效果图"></p>
+        <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg"></div><br>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。<br><br><a id="more"></a><br><br># 博客搭建<br><br>## 前期准备<br><br><code>html
+本博客在 Window10 环境下搭建。</code><br><br>- 安装 Git、Node.js<br><br>下载并安装 <a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git</a>、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。除了安装路径，我全部选择默认选项安装。<br><br>&gt;安装完成后可以运行以下命令行验证是否安装完成：<br><code>git --version</code><br><code>node -v</code><br><code>npm -v</code><br>若出错可尝试检查环境变量路径或重启电脑或重新安装。<br><br><br>- 安装 Hexo<br><br>在随意位置鼠标右键 <code>Git Bash Here</code><br><br>&gt; 后面提到命令若无特别说明在根目录下 <code>git bash</code> 运行。<br><br>输入<code>npm install -g hexo</code>，回车安装 Hexo。<br><br>&gt; 其安装时间较长，若长时间未反应可参考 <a href="https://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">零基础免费搭建个人博客-hexo+github</a>中关于安装 hexo 部分：<br>&gt;<br>&gt; <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>&gt;<br>&gt; <code>cnpm install -g hexo-cli</code><br>&gt;<br>&gt; 安装过程显示 warn ：<code>npm WARN deprecated fsevents@2.1.3: Please update to v 2.2.x</code>，忽略即可：<br>&gt;<br>&gt; <code>cnpm install hexo --save</code><br>&gt;<br>&gt; 若出现错误，根据错误直接百度。<br>&gt;<br>&gt; 安装完成后查看是否成功：<code>hexo -v</code><br><br>## 初始化 Hexo<br><br>- 创建文件夹<br><br>根据自己情况选择合适位置建立文件夹用以存放相应文件，例：<code>D:\Blog</code>。<br><br>- 初始化 hexo<br><br>在Blog文件下，右键<code>Git Bash Here</code>，输入命令：<code>hexo init</code>，进行初始化。<br><br>- 初始配置<br><br>打开根文件夹下的<code>_config.yml</code>文件，进行基础配置。<br><br>|参数|描述|<br>|-|:-:|<br>|title|    网站标题|<br>|subtitle|    网站副标题|<br>|description|    网站描述|<br>|keywords|    网站的关键词。支援多个关键词。|<br>|author| 作者名字 |<br>|language|    网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。|<br>|timezon|    网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。|<br><br>更多配置参考：<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档</a><br><br>- 浏览本地博客<br><br>运行以下命令：<br><br><code>hexo g</code><br><code>hexo s</code><br><br>&gt; 更多 hexo 命令参考：<a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令笔记</a><br><br>在浏览器输入<code>localhost:4000</code>，可浏览本地博客效果：<br><br><div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg"></div> 
+
+
 <p>按 <code>Ctrl+C</code> 可关闭 server。</p>
 <h2 id="博客写作"><a href="#博客写作" class="headerlink" title="博客写作"></a>博客写作</h2><ul>
 <li>新增博客</li>
@@ -353,7 +265,8 @@ top: 3 #自定义文章排序
 ---
 正文
 </code></pre><blockquote>
-<p>注意 <code>_config.yml</code> 中有个 <code>permalink</code> 设置，默认为 <code>permalink: :year/:month/:day/:title/</code>，即存放博客文章的<code>永久链接</code>格式，例如新建了一篇 <code>Hexo+Github搭建博客记录</code> 博文，其将被存放到 Github 仓库的 <code>Lykisun.github.io/2020/12/20/Hexo+Github搭建博客记录/</code> 目录。</p>
+<p>注意:</p>
+<p><code>_config.yml</code> 中有个 <code>permalink</code> 设置，默认为 <code>permalink: :year/:month/:day/:title/</code>，即存放博客文章的<code>永久链接</code>格式，例如新建了一篇 <code>Hexo+Github搭建博客记录</code> 博文，其将被存放到 Github 仓库的 <code>Lykisun.github.io/2020/12/20/Hexo+Github搭建博客记录/</code> 目录。</p>
 </blockquote>
 <blockquote>
 <p><strong>如何让博文列表不显示全部内容</strong>：<br>在合适的位置加上 <code>&lt;!--more--&gt;</code> 即可。</p>
@@ -404,8 +317,10 @@ scheme: Muse
 #scheme: Gemini
 </code></pre><p>可以选择不同主题样式，在其 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">GitHub 主页</a> 可以看到不同样式的 <code>Live Preview</code> 个人博客展示。<br>想阅读中文详细参数设置可参考：<a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">hexo博客搭建指北</a></p>
 <blockquote>
-<p>我在使用next主题时并没有什么问题，但是在更换其他主题，博客页面显示：<br><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png" alt="image-20201230011740346"></p>
+<p>我在使用next主题时并没有什么问题，但是在更换其他主题，博客页面显示：</p>
 </blockquote>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png"></div> 
+
 <blockquote>
 <p>搜索后查到： <code>原因是hexo在5.0之后把 swig 给删除了需要自己手动安装。</code><br>运行 <code>npm i hexo-renderer-swig</code> 后，过一会就正常了。</p>
 </blockquote>
@@ -445,7 +360,7 @@ git config --global user.name&quot;Your Name&quot;</code>，则按提示依次�
         <p><span>本文标题:</span><a href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
         <p><span>发布时间:</span>2020年12月20日 - 01时17分</p>
-        <p><span>最后更新:</span>2021年01月04日 - 11时27分</p>
+        <p><span>最后更新:</span>2021年01月06日 - 13时35分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2020/12/20/Hexo+Github搭建博客/" title="Hexo+Github 搭建博客记录">/2020/12/20/Hexo+Github搭建博客/</a>
             <span class="copy-path" data-clipboard-text="原文: /2020/12/20/Hexo+Github搭建博客/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -478,7 +393,7 @@ git config --global user.name&quot;Your Name&quot;</code>，则按提示依次�
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#博客搭建"><span class="toc-number">1.</span> <span class="toc-text">博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前期准备"><span class="toc-number">1.1.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化-Hexo"><span class="toc-number">1.2.</span> <span class="toc-text">初始化 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客写作"><span class="toc-number">1.3.</span> <span class="toc-text">博客写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客部署"><span class="toc-number">2.</span> <span class="toc-text">博客部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-GitHub-仓库"><span class="toc-number">2.1.</span> <span class="toc-text">配置 GitHub 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-config-yml"><span class="toc-number">2.2.</span> <span class="toc-text">配置 _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到-GitHub"><span class="toc-number">2.3.</span> <span class="toc-text">部署到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客美化"><span class="toc-number">3.</span> <span class="toc-text">博客美化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">3.1.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">3.2.</span> <span class="toc-text">主题配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客维护"><span class="toc-number">4.</span> <span class="toc-text">博客维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-源代码"><span class="toc-number">4.1.</span> <span class="toc-text">Push 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-控制"><span class="toc-number">4.2.</span> <span class="toc-text">CI 控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">4.3.</span> <span class="toc-text">问题</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#博客写作"><span class="toc-number">1.</span> <span class="toc-text">博客写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客部署"><span class="toc-number"></span> <span class="toc-text">博客部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-GitHub-仓库"><span class="toc-number">1.</span> <span class="toc-text">配置 GitHub 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-config-yml"><span class="toc-number">2.</span> <span class="toc-text">配置 _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到-GitHub"><span class="toc-number">3.</span> <span class="toc-text">部署到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客美化"><span class="toc-number"></span> <span class="toc-text">博客美化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">1.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">2.</span> <span class="toc-text">主题配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客维护"><span class="toc-number"></span> <span class="toc-text">博客维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-源代码"><span class="toc-number">1.</span> <span class="toc-text">Push 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-控制"><span class="toc-number">2.</span> <span class="toc-text">CI 控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">3.</span> <span class="toc-text">问题</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -553,7 +468,7 @@ git config --global user.name&quot;Your Name&quot;</code>，则按提示依次�
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/06/jsDelivr+Github搭建CDN图床/">jsDelivr+Github搭建CDN图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");

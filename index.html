@@ -5,16 +5,16 @@
   
   <title>谢欣欣已经长大</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我又何必记录呢">
+  <meta name="description" content="春立复冬至，青丝将白雪。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="谢欣欣已经长大">
 <meta property="og:url" content="/index.html">
 <meta property="og:site_name" content="谢欣欣已经长大">
-<meta property="og:description" content="我又何必记录呢">
+<meta property="og:description" content="春立复冬至，青丝将白雪。">
 <meta property="og:locale" content="zh-cn">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="谢欣欣已经长大">
-<meta name="twitter:description" content="我又何必记录呢">
+<meta name="twitter:description" content="春立复冬至，青丝将白雪。">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -199,6 +199,71 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-jsDelivr+Github搭建CDN图床" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/01/06/jsDelivr+Github搭建CDN图床/" class="article-date">
+      <time datetime="2021-01-06T20:07:22.000Z" itemprop="datePublished">2021-01-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/06/jsDelivr+Github搭建CDN图床/">jsDelivr+Github搭建CDN图床</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/n6xmel.jpg"></div>
+
+<p>引言：在搭建博客的过程中，时常需要插入图片，总是在很多地方提到 CDN 加速服务，于是了解过后尝试引入 CDN 加速。由于文章插入我使用 Typora + 阿里云OSS，而阿里云 CDN 是收费的，因此暂时使用开源免费的 <a href="https://www.jsdelivr.com/?docs=gh" target="_blank" rel="noopener">Jsdelivr</a>，并使用其支持的 Github 图床进行搭建。</p>
+          
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+    </div>
+
+
+      
+      
+        <p class="article-more-link">
+          <a  href="/2021/01/06/jsDelivr+Github搭建CDN图床/#more">More&gt; >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Markdown+阿里云图床" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -226,10 +291,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/g8v8zd.jpg" alt="g8v8zd"></p>
-<blockquote>
+              <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/g8v8zd.jpg"></div> 
+
 <p>引言：虽然我一直在用 Snipaste，但我主要使用截图后贴图功能，可以很方便进行对比查看，其编辑样式也比较好看。但是 Snipaste 不支持滚动截图，而且编辑样式没有阴影。其实滚动截图倒是不常用，而且 FSCapture 就足够。只是我一直想找一个能截图自带阴影的截图工具。用了 Winsnap，感觉阴影感一般。似乎 Ashampoo Snap 也可以，但没深入使用。Snagit 编辑功能比较强大，就是太笨重。最后选择了 ShareX，不仅可以添加自定义阴影，还有圆角等图像效果，最强的还是有截图上传等众多功能。另外用了一下截图后贴图的 Setuna，不好用。体验了无边框的图片浏览器 Vieas 和 MassiGra，都还不错，不过最后还是回归了 Honeyview。当然还有很多优秀的截图看图工具，在此只是选择了符合自己需求的而已。</p>
-</blockquote>
           
       
       
@@ -359,10 +423,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/zm219o.png" alt="zm219o"></p>
-<blockquote>
-<p>原本根据 <a href="https://www.jianshu.com/p/60de63b14ae5?from=jiantop.com" target="_blank" rel="noopener">Hexo的版本控制与持续集成</a>，想要使用 <a href="https://ci.appveyor.com/" target="_blank" rel="noopener">AppVeyor</a> 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。后来根据 <a href="https://hexo.io/zh-cn/docs/github-pages#" target="_blank" rel="noopener">将 Hexo 部署到 GitHub Pages</a>，成功利用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将源码备份到 Github 仓库，并实现自动编译部署到分支。再后来了解到 <a href="https://github.com/actions" target="_blank" rel="noopener">Github Action</a> 本身就具有免费的 CI 功能，于是实现将源码 PUSH 到私密仓库，再自动推送到博客文件所在仓库。</p>
-</blockquote>
+              <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/zm219o.png"></div> 
+
+<p>引言：原本根据 <a href="https://www.jianshu.com/p/60de63b14ae5?from=jiantop.com" target="_blank" rel="noopener">Hexo的版本控制与持续集成</a>，想要使用 <a href="https://ci.appveyor.com/" target="_blank" rel="noopener">AppVeyor</a> 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。后来根据 <a href="https://hexo.io/zh-cn/docs/github-pages#" target="_blank" rel="noopener">将 Hexo 部署到 GitHub Pages</a>，成功利用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将源码备份到 Github 仓库，并实现自动编译部署到分支。再后来了解到 <a href="https://github.com/actions" target="_blank" rel="noopener">Github Action</a> 本身就具有免费的 CI 功能，于是实现将源码 PUSH 到私密仓库，再自动推送到博客文件所在仓库。</p>
           
       
       
@@ -425,10 +488,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg" alt></p>
-<blockquote>
-<p>闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。</p>
-</blockquote>
+              <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg"></div><br>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。<br><br>
           
       
       
