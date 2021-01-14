@@ -1,244 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
-  <title>Hexo+Github 搭建博客记录 | 谢欣欣已经长大</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
-<meta name="keywords" content="Hexo,Github,Blog">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Github 搭建博客记录">
-<meta property="og:url" content="/2020/12/20/Hexo+Github搭建博客/index.html">
-<meta property="og:site_name" content="谢欣欣已经长大">
-<meta property="og:description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg">
-<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg">
-<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png">
-<meta property="og:updated_time" content="2021-01-06T13:47:26.066Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Github 搭建博客记录">
-<meta name="twitter:description" content="引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 Python+Django 搭建博客的挺详细的教程：Django 搭建个人博客，于是兴高采烈地跟着复制码代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 PHP+WordPress 搭建博客的教程：果">
-<meta name="twitter:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg">
+  <meta name="keywords" content="网站关键字">
+  <meta name="description" content="网站简介">
   
+  <title>谢欣欣已经长大</title>
   
-    <link rel="icon" href="/img/favicon.png">
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
   
-  
-      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-  
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
-  <script>
-      var yiliaConfig = {
-          rootUrl: '/',
-          fancybox: true,
-          animate: true,
-          isHome: false,
-          isPost: true,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
       }
-  </script>
-</head></html>
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/favicon.ico">
+</head>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/head.jpg" class="js-avatar">
-            
-        </a>
-
-        <hgroup>
-          <h1 class="header-author"><a href="/" title="Hi Mate">长大了的谢星星</a></h1>
-        </hgroup>
-
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav">
+    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>长大了的谢星星</p>
+    <div class="nav-link">
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
         
         
+        <a href="http://example.com" target="_blank"><div class="link-box github"></div></a>
         
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
         
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">首页</a></li>
-                        
-                            <li><a href="/archives">文章</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fl github" target="_blank" href="https://github.com/XieXinXing" title="github">github</a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/AliyunOSS/" style="font-size: 10px;">AliyunOSS</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Github-Action/" style="font-size: 10px;">Github Action</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PicGo/" style="font-size: 10px;">PicGo</a> <a href="/tags/ShareX/" style="font-size: 10px;">ShareX</a> <a href="/tags/Travis-CI/" style="font-size: 10px;">Travis CI</a> <a href="/tags/Typora/" style="font-size: 10px;">Typora</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://XieXinXing.github.io/">name</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">两袖秋风，孤芳自赏。</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+        <a href="mailto:http://example.com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class="no-result">无搜索结果</p>
+    </div>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">长大了的谢星星</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/head.jpg" class="js-avatar">
-                
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="Me">长大了的谢星星</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">首页</a></li>
-                
-                    <li><a href="/archives">文章</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                <div class="social">
-                    
-                        <a class="github" target="_blank" href="https://github.com/XieXinXing" title="github">github</a>
-                    
-                </div>
-            </nav>
-        </header>                
-    </div>
-</nav>
-      <div class="body-wrap"><article id="post-Hexo+Github搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/12/20/Hexo+Github搭建博客/" class="article-date">
-      <time datetime="2020-12-20T01:17:32.000Z" itemprop="datePublished">2020-12-20</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo+Github 搭建博客记录
-    </h1>
-  
+    <!--Homepage-->
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
 
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
+<!--archives-->
 
-        <div class="clearfix"></div>
-      </div>
-      
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2021/01/">一月 2021<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/12/">十二月 2020<span class="archive-count">3</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/技术/">技术<span class="category-count">1</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg"></div><br>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。<br><br><a id="more"></a><br><br># 博客搭建<br><br>## 前期准备<br><br><code>html
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-5.png)">
+  <h2>Hexo+Github 搭建博客记录</h2>
+    
+  <p>作者:长大了的谢星星 &nbsp&nbsp 发布于:<time datetime="2020-12-20T01:17:32.000Z">
+          2020-12-20
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/wyeder.jpg"></div><br>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。<br><br><a id="more"></a><br><br># 博客搭建<br><br>## 前期准备<br><br><code>html
 本博客在 Window10 环境下搭建。</code><br><br>- 安装 Git、Node.js<br><br>下载并安装 <a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git</a>、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。除了安装路径，我全部选择默认选项安装。<br><br>&gt;安装完成后可以运行以下命令行验证是否安装完成：<br><code>git --version</code><br><code>node -v</code><br><code>npm -v</code><br>若出错可尝试检查环境变量路径或重启电脑或重新安装。<br><br><br>- 安装 Hexo<br><br>在随意位置鼠标右键 <code>Git Bash Here</code><br><br>&gt; 后面提到命令若无特别说明在根目录下 <code>git bash</code> 运行。<br><br>输入<code>npm install -g hexo</code>，回车安装 Hexo。<br><br>&gt; 其安装时间较长，若长时间未反应可参考 <a href="https://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">零基础免费搭建个人博客-hexo+github</a>中关于安装 hexo 部分：<br>&gt;<br>&gt; <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>&gt;<br>&gt; <code>cnpm install -g hexo-cli</code><br>&gt;<br>&gt; 安装过程显示 warn ：<code>npm WARN deprecated fsevents@2.1.3: Please update to v 2.2.x</code>，忽略即可：<br>&gt;<br>&gt; <code>cnpm install hexo --save</code><br>&gt;<br>&gt; 若出现错误，根据错误直接百度。<br>&gt;<br>&gt; 安装完成后查看是否成功：<code>hexo -v</code><br><br>## 初始化 Hexo<br><br>- 创建文件夹<br><br>根据自己情况选择合适位置建立文件夹用以存放相应文件，例：<code>D:\Blog</code>。<br><br>- 初始化 hexo<br><br>在Blog文件下，右键<code>Git Bash Here</code>，输入命令：<code>hexo init</code>，进行初始化。<br><br>- 初始配置<br><br>打开根文件夹下的<code>_config.yml</code>文件，进行基础配置。<br><br>|参数|描述|<br>|-|:-:|<br>|title|    网站标题|<br>|subtitle|    网站副标题|<br>|description|    网站描述|<br>|keywords|    网站的关键词。支援多个关键词。|<br>|author| 作者名字 |<br>|language|    网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。|<br>|timezon|    网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。|<br><br>更多配置参考：<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档</a><br><br>- 浏览本地博客<br><br>运行以下命令：<br><br><code>hexo g</code><br><code>hexo s</code><br><br>&gt; 更多 hexo 命令参考：<a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令笔记</a><br><br>在浏览器输入<code>localhost:4000</code>，可浏览本地博客效果：<br><br><div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/blog/2020-12/newblog.jpg"></div> 
 
 
@@ -349,225 +240,75 @@ git config --global user.name&quot;Your Name&quot;</code>，则按提示依次�
 <p><em>参考链接</em></p>
 <p><a href="https://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">搭建个人博客-hexo+github详细完整步骤</a><br><a href="https://theme-materialized.github.io/how-to-build-a-hexo-blog/" target="_blank" rel="noopener">Hexo博客搭建—从入门到精通</a><br><a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%86%99%E4%BD%9C" target="_blank" rel="noopener">hexo博客搭建指北</a><br><a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">小茗同学的博客园</a><br><a href="https://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">Hexo搭建Github静态博客</a><br><a href="https://luuman.github.io/2015/12/27/GitHubHexo/" target="_blank" rel="noopener">使用GitHub搭建Hexo博客</a></p>
 
-      
-      
-    </div>
-    
   </div>
-  
+  <!--评论块-->
     
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></p>
-        <p><span>文章作者:</span><a href="/" title="访问 长大了的谢星星 的个人博客">长大了的谢星星</a></p>
-        <p><span>发布时间:</span>2020年12月20日 - 01时17分</p>
-        <p><span>最后更新:</span>2021年01月06日 - 13时47分</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/12/20/Hexo+Github搭建博客/" title="Hexo+Github 搭建博客记录">/2020/12/20/Hexo+Github搭建博客/</a>
-            <span class="copy-path" data-clipboard-text="原文: /2020/12/20/Hexo+Github搭建博客/　　作者: 长大了的谢星星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script src="/js/clipboard.min.js"></script>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
-        </p>
-    </div>
 
-
-
-<nav id="article-nav">
-  
-    <a href="/2020/12/20/CI部署Hexo博客/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          自动部署 Hexo 静态博客
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
-
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#博客写作"><span class="toc-number">1.</span> <span class="toc-text">博客写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客部署"><span class="toc-number"></span> <span class="toc-text">博客部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-GitHub-仓库"><span class="toc-number">1.</span> <span class="toc-text">配置 GitHub 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-config-yml"><span class="toc-number">2.</span> <span class="toc-text">配置 _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到-GitHub"><span class="toc-number">3.</span> <span class="toc-text">部署到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客美化"><span class="toc-number"></span> <span class="toc-text">博客美化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">1.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">2.</span> <span class="toc-text">主题配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客维护"><span class="toc-number"></span> <span class="toc-text">博客维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-源代码"><span class="toc-number">1.</span> <span class="toc-text">Push 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-控制"><span class="toc-number">2.</span> <span class="toc-text">CI 控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">3.</span> <span class="toc-text">问题</span></a></li></ol>
-</div>
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script>
-    var valueHide = "隐藏目录";
-    var valueShow = "显示目录";
-
-    if ($(".left-col").is(":hidden")) {
-        $("#tocButton").attr("value", valueShow);
-    }
-    $("#tocButton").click(function() {
-        if ($("#toc").is(":hidden")) {
-            $("#tocButton").attr("value", valueHide);
-            $("#toc").slideDown(320);
-        }
-        else {
-            $("#tocButton").attr("value", valueShow);
-            $("#toc").slideUp(350);
-        }
-    })
-    if ($(".toc").length < 1) {
-        $("#toc, #tocButton").hide();
-    }
-</script>
-
-
-
-
-
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
-
-
+<nav class="post-nav">
+  <!-- Prev Nav -->
     
-        <div id="gitments"></div>
-<script src="/js/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-      id: window.location.pathname,
-      owner: 'XieXinXing',
-      repo: 'XieXinXing.github.io',
-      oauth: {
-        client_id: '',
-        client_secret: '',
-      },
-    })
-    gitment.render('gitments')
-</script>
+  <a href="/2020/12/20/CI部署Hexo博客/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
     
 
 
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2020/12/20/CI部署Hexo博客/" title="上一篇: 自动部署 Hexo 静态博客">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-        
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
-        
-    </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/01/06/jsDelivr+Github搭建CDN图床/">jsDelivr+Github搭建CDN图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/01/01/Markdown+阿里云图床/">Markdown + 阿里云图床</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/缘何而来/">缘何而来</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/CI部署Hexo博客/">自动部署 Hexo 静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/20/Hexo+Github搭建博客/">Hexo+Github 搭建博客记录</a></li></ul>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-    <script>
-        $(".post-list").addClass("toc-article");
-        $(".post-list-item a").attr("target","_blank");
-        $("#post-nav-button > a:nth-child(2)").click(function() {
-            $(".fa-bars, .fa-times").toggle();
-            $(".post-list").toggle(300);
-            if ($(".toc").length > 0) {
-                $("#toc, #tocButton").toggle(200, function() {
-                    if ($(".switch-area").is(":visible")) {
-                        $("#tocButton").attr("value", valueHide);
-                        }
-                    })
-            }
-            else {
-            }
-        })
-    </script>
-
-
-
-    <script>
-        
-    </script>
+  <!-- Next Nav -->
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#博客写作"><span class="post-toc-number">1.</span> <span class="post-toc-text">博客写作</span></a></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#博客部署"><span class="post-toc-number"></span> <span class="post-toc-text">博客部署</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置-GitHub-仓库"><span class="post-toc-number">1.</span> <span class="post-toc-text">配置 GitHub 仓库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置-config-yml"><span class="post-toc-number">2.</span> <span class="post-toc-text">配置 _config.yml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到-GitHub"><span class="post-toc-number">3.</span> <span class="post-toc-text">部署到 GitHub</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#博客美化"><span class="post-toc-number"></span> <span class="post-toc-text">博客美化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题下载"><span class="post-toc-number">1.</span> <span class="post-toc-text">主题下载</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">主题配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#博客维护"><span class="post-toc-number"></span> <span class="post-toc-text">博客维护</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Push-源代码"><span class="post-toc-number">1.</span> <span class="post-toc-text">Push 源代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CI-控制"><span class="post-toc-number">2.</span> <span class="post-toc-text">CI 控制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#问题"><span class="post-toc-number">3.</span> <span class="post-toc-text">问题</span></a></li></ol>
+</li></div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2021 长大了的谢星星
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
-            </div>
-        </div>
-        
-    </div>
-</footer>
-
-    </div>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var backgroundnum = 24;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-        })
-    </script>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
 
 
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    $(document).ready(function() {
-        if ($("#comments").length < 1) {
-            $("#scroll > a:nth-child(2)").hide();
-        };
-    })
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
-</script>
-
+<p style="line-height: 45px">Copyright ©  2017  谢欣欣已经长大</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
 
   </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
 </body>
 </html>

@@ -1,384 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
-  <title>theme-sakura | 谢欣欣已经长大</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo主题Sakura修改自WordPress主题Sakura，感谢原作者Mashiro">
-<meta name="keywords" content="Hexo 主题 Sakura 🌸">
-<meta property="og:type" content="website">
-<meta property="og:title" content="theme-sakura">
-<meta property="og:url" content="/theme-sakura/index.html">
-<meta property="og:site_name" content="谢欣欣已经长大">
-<meta property="og:description" content="Hexo主题Sakura修改自WordPress主题Sakura，感谢原作者Mashiro">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://static.2heng.xin/wp-content/uploads//2018/05/sakura2.jpeg">
-<meta property="og:updated_time" content="2021-01-06T13:47:26.066Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="theme-sakura">
-<meta name="twitter:description" content="Hexo主题Sakura修改自WordPress主题Sakura，感谢原作者Mashiro">
-<meta name="twitter:image" content="https://static.2heng.xin/wp-content/uploads//2018/05/sakura2.jpeg">
+  <meta name="keywords" content="网站关键字">
+  <meta name="description" content="网站简介">
   
+  <title>谢欣欣已经长大</title>
   
-    <link rel="icon" href="/img/favicon.png">
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
   
-  
-      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-  
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <!-- 加载特效 -->
-    <script src="/js/pace.js"></script>
-    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
-  <script>
-      var yiliaConfig = {
-          rootUrl: '/',
-          fancybox: true,
-          animate: true,
-          isHome: false,
-          isPost: false,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
       }
-  </script>
-</head></html>
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="shortcut icon" href="/source/favicon.ico">
+</head>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/head.jpg" class="js-avatar">
-            
-        </a>
-
-        <hgroup>
-          <h1 class="header-author"><a href="/" title="Hi Mate">长大了的谢星星</a></h1>
-        </hgroup>
-
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav">
+    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>长大了的谢星星</p>
+    <div class="nav-link">
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
         
         
+        <a href="http://example.com" target="_blank"><div class="link-box github"></div></a>
         
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
         
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">首页</a></li>
-                        
-                            <li><a href="/archives">文章</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fl github" target="_blank" href="https://github.com/XieXinXing" title="github">github</a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/AliyunOSS/" style="font-size: 10px;">AliyunOSS</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Github-Action/" style="font-size: 10px;">Github Action</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PicGo/" style="font-size: 10px;">PicGo</a> <a href="/tags/ShareX/" style="font-size: 10px;">ShareX</a> <a href="/tags/Travis-CI/" style="font-size: 10px;">Travis CI</a> <a href="/tags/Typora/" style="font-size: 10px;">Typora</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://XieXinXing.github.io/">name</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">两袖秋风，孤芳自赏。</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+        <a href="mailto:http://example.com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class="no-result">无搜索结果</p>
+    </div>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">长大了的谢星星</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/head.jpg" class="js-avatar">
-                
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="Me">长大了的谢星星</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">首页</a></li>
-                
-                    <li><a href="/archives">文章</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                <div class="social">
-                    
-                        <a class="github" target="_blank" href="https://github.com/XieXinXing" title="github">github</a>
-                    
-                </div>
-            </nav>
-        </header>                
-    </div>
-</nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/theme-sakura/index.html" class="article-date">
-      <time datetime="2019-01-04T22:53:25.000Z" itemprop="datePublished">2019-01-04</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2021/01/">一月 2021<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/12/">十二月 2020<span class="archive-count">3</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/技术/">技术<span class="category-count">1</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
     
-      <input type="hidden" class="isFancy" />
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-3.png)">
+  <h2>theme-sakura</h2>
     
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      theme-sakura
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
-
-
-          
-        <p>Hexo主题Sakura修改自WordPress主题<a href="https://github.com/mashirozx/Sakura/" target="_blank" rel="noopener">Sakura</a>，感谢原作者<a href="https://2heng.xin/" target="_blank" rel="noopener">Mashiro</a></p>
-
-      
-      
-    </div>
+  <p>作者:长大了的谢星星 &nbsp&nbsp 发布于:<time datetime="2019-01-04T22:53:25.000Z">
+          2019-01-04
+    </time>
+  </p>
     
   </div>
-  
+  <div class="post-page-content">
+  <p>Hexo主题Sakura修改自WordPress主题<a href="https://github.com/mashirozx/Sakura/" target="_blank" rel="noopener">Sakura</a>，感谢原作者<a href="https://2heng.xin/" target="_blank" rel="noopener">Mashiro</a></p>
+
+  </div>
+  <!--评论块-->
     
 
-
-  
 </article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
 
 
-
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+  <!-- Next Nav -->
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    
 </div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
-
-
-
-
-
-
-    <script>
-        
-    </script>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2021 长大了的谢星星
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
-            </div>
-        </div>
-        
-    </div>
-</footer>
-
-    </div>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var backgroundnum = 24;
-            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
-        })
-    </script>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
 
 
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    $(document).ready(function() {
-        if ($("#comments").length < 1) {
-            $("#scroll > a:nth-child(2)").hide();
-        };
-    })
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
-  <script language="javascript">
-    $(function() {
-        $("a[title]").each(function() {
-            var a = $(this);
-            var title = a.attr('title');
-            if (title == undefined || title == "") return;
-            a.data('title', title).removeAttr('title').hover(
-
-            function() {
-                var offset = a.offset();
-                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
-                    top: offset.top - a.outerHeight() - 15,
-                    left: offset.left + a.outerWidth()/2 + 1
-                }).fadeIn(function() {
-                    var pop = $(this);
-                    setTimeout(function() {
-                        pop.remove();
-                    }, pop.text().length * 800);
-                });
-            }, function() {
-                $("#anchortitlecontainer").remove();
-            });
-        });
-    });
-</script>
-
+<p style="line-height: 45px">Copyright ©  2017  谢欣欣已经长大</p>
+<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
 
   </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
 </body>
 </html>
