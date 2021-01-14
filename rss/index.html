@@ -1,200 +1,263 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  
-  <meta name="keywords" content="网站关键字">
-  <meta name="description" content="网站简介">
-  
-  <title>谢欣欣已经长大</title>
-  
-    <!-- stylesheets list from config.yml -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-      <link rel="stylesheet" href="/css/materialize.min.css">
+    <title>rss | 谢欣欣已经长大</title>
+    <meta name="description" content="A minimal hexo theme.">
+    <meta name="keywords" content="hexo,theme,otakism,otaku">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="google-site-verification" content>
+    <meta name="baidu-site-verification" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="春立复冬至，青丝将白雪。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="rss">
+<meta property="og:url" content="/rss/index.html">
+<meta property="og:site_name" content="谢欣欣已经长大">
+<meta property="og:description" content="春立复冬至，青丝将白雪。">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2021-01-14T14:34:29.113Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="rss">
+<meta name="twitter:description" content="春立复冬至，青丝将白雪。">
     
-      <link rel="stylesheet" href="/css/main.min.css">
+
+    <!-- Favicon -->
     
-  
-  <style type="text/css">
-      html{
-          font-family: sans-serif;
-          font-weight: 300;
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <script>
+      function setLoadingBarProgress(num) {
+        document.getElementById('loading-bar').style.width = num + "%";
       }
-      @font-face {
-          font-family: 'Material Icons';
-          font-style: normal;
-          font-weight: 400;
-          src: url(/fonts/MaterialIcons-Regular.eot);
-          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
-          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
-          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
-      }
-  </style>
-<link rel="shortcut icon" href="/source/favicon.ico">
+    </script>
+
+    
 </head>
+
 <body>
-<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
-<div id="menu-outer">
-  <div id="menu-inner">
-      <ul id="slide-out" class="side-nav">
-    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
-    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
-    <p>长大了的谢星星</p>
-    <div class="nav-link">
-        
-        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
-        
-        
-        <a href="http://example.com" target="_blank"><div class="link-box github"></div></a>
-        
-        
-        <a href="mailto:http://example.com"><div class="link-box email"></div></a>
-        
-        
-        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
-        
-        
-        <a href="http://example.com" target="_blank"> <div class="link-box zhihu"></div></a>
-        
-    </div>
-    <div class="nav-search">
-        <form id="search-form"> <!-- 搜索框相关 -->
-            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
-            <div class="nav-search-img"><i class="material-icons">search</i></div>
-        </form>
-        <div id="local-search-result"></div> <!-- 搜索结果区 -->
-        <p class="no-result">无搜索结果</p>
-    </div>
-</div>
-    <!--Homepage-->
 
-<li class="nav-list">
-    <a href="/" target="_self">
-        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
-    </a>
-</li>
-
-<!--archives-->
-
-<li class="nav-list dropdown-btn">
-    <a class target="_self">
-        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
-    </a>
-</li>
-
-<ul class="dropdown-menu dropdown">
-    <li class="nav-dropdown-list">
-        <a class="archive-link" href="/archives/2021/01/">一月 2021<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/12/">十二月 2020<span class="archive-count">3</span></a>
-    </li>
-</ul>
-<!--categories-->
-
-<ul class="dropdown-menu dropdown">
-    <li class="nav-dropdown-list">
-        <a class="category-link" href="/categories/技术/">技术<span class="category-count">1</span></a>
-    </li>
-</ul>
-<!--tags-->
-
-<li class="nav-list">
-    <a href="/archives" target="_self">
-        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
-    </a>
-</li>
-
-<!--photo-->
-
-<!--friends-->
-
-<!--about-->
-
-
-</ul>
-
-  </div>
+<div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
 </div>
 
-<div id="content-outer">
-  <div id="content-inner">
-    
-<article id="post">
-  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-9.png)">
-  <h2>rss</h2>
-    
-  <p>作者:长大了的谢星星 &nbsp&nbsp 发布于:<time datetime="2018-12-20T23:09:03.000Z">
-          2018-12-20
+<script>setLoadingBarProgress(20)</script>
+
+<div id="site-wrapper">
+
+    <header id="header">
+    <div id="header-wrapper" class="clearfix">
+        <a id="logo" href="/">
+            <img src="/img/logo.png"/>
+            <span id="site-desc">
+                otaku keeps alive
+            </span>
+        </a>
+        <button id="site-nav-switch">
+            <span class="icon icon-menu"></span>
+        </button>
+    </div>
+</header>
+    <script>setLoadingBarProgress(40);</script>
+
+    <main id="main" role="main">
+        <article id="page-"
+         class="post article white-box article-type-page"
+         itemscope itemprop="blogPost">
+    <h2 class="title">
+        <a href="/rss/index.html">
+            rss
+        </a>
+    </h2>
+    <time>
+        12月 20, 2018
     </time>
-  </p>
-    
-  </div>
-  <div class="post-page-content">
-  
-  </div>
-  <!--评论块-->
-    
-
+    <section class="content">
+        <div class="article-entry" itemprop="articleBody">
+            
+        </div>
+        <div class="article-tags tags">
+            
+        </div>
+    </section>
 </article>
-<nav class="post-nav">
-  <!-- Prev Nav -->
+
+
+
+
+
+        <script>setLoadingBarProgress(60);</script>
+    </main>
+
+    <footer id="footer" class="clearfix">
+
     
 
+    <div class="social-wrapper">
+        
+            
+                <a href="https://github.com/artchen" class="social github"
+                   target="_blank" rel="external">
+                    <span class="icon icon-github"></span>
+                </a>
+            
+                <a href="/atom.xml" class="social rss"
+                   target="_blank" rel="external">
+                    <span class="icon icon-rss"></span>
+                </a>
+            
+        
+    </div>
 
-  <!-- Next Nav -->
+    <div class="theme-by">Theme <span class="codename">Memory</span> designed by <a href="https://artifact.me/"
+                                                                                    target="_blank">Art Chen</a>.
+    </div>
+    <div>&copy; <a href="/">谢欣欣已经长大</a></div>
+
+</footer>
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <div class="overlay"></div>
+</div>
+
+<div class="site-sidebar" id="site-sidebar">
+
     
-</nav>
-<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
-<div class="post-toc-none"><p>(无)</p></div>
-<div class="post-toc-box">
-    
+
+    <div class="sidebar-switch clearfix "
+         style="display: none">
+        <a class="dark-btn active" data-toggle="toc">
+            <span class="icon icon-list"></span>
+            <span class="text">Index</span>
+        </a>
+        <a class="dark-btn" data-toggle="bio">
+            <span class="icon icon-person"></span>
+            <span class="text">Bio</span>
+        </a>
+    </div>
+
+    <div class="site-toc "
+         style="display: none">
+        
+            <div class="no-index">No Index</div>
+        
+    </div>
+
+    <div class="site-bio show"
+         style="display: block">
+
+        <div class="about-me clearfix">
+            <div class="avatar">
+                <img src="/img/avatar.png"/>
+            </div>
+            <div class="info">
+                <a class="name dark-btn" href="/about">
+                    长大了的谢星星
+                </a>
+            </div>
+            <div class="info">
+                <span class="item desc">
+                    春立复冬至，青丝将白雪。
+                </span>
+            </div>
+        </div>
+
+        <div class="menu section">
+            <ul class="clearfix">
+                
+                    <li class="left">
+                        <a href="/about"
+                           onfocus="this.blur();"
+                           class="nav-about dark-btn block">
+                            About
+                        </a>
+                    </li>
+                
+                    <li class="right">
+                        <a href="/archives"
+                           onfocus="this.blur();"
+                           class="nav-archives dark-btn block">
+                            Archives
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="shortcuts">
+        <a href="#header" class="top window-nav dark-btn" id="go-top">
+            <span class="icon icon-chevron-thin-up"></span>
+        </a>
+        <a class="close dark-btn" id="sidebar-close">
+            <span class="icon icon-close"></span>
+        </a>
+        <a href="#footer" class="top window-nav dark-btn" id="go-bottom">
+            <span class="icon icon-chevron-thin-down"></span>
+        </a>
+    </div>
+
 </div>
-<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
-<script type="text/javascript">
-    menu();
-</script>
-  </div>
-</div>
-<div id="bottom-outer">
-  <div id="bottom-inner">
-    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
-
-
-<p style="line-height: 45px">Copyright ©  2017  谢欣欣已经长大</p>
-<p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
-
-  </div>
-</div>
-
-<!--影集界面需要的资源-->
 
 
 
-<!-- scripts list from theme config.yml -->
-
-<script src="/js/jquery-3.1.1.min.js"></script>
-
-<script src="/js/materialize.min.js"></script>
-
-<script src="/js/main.min.js"></script>
 
 
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+<script src="/js/jquery.fitvids.js"></script>
 <script>
-    NProgress.start();
-    NProgress.done();
-    lazy();
-    links();
-    window.onpopstate = menu();
-    //pjax操作
-    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
-    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
-        .on('pjax:end', () => {
-            dowmdiv();
-            lazy();
-            toc();
-            links();
-            menu();
-        });
+  var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+  var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+  var ALGOLIA_API_KEY = "";
+  var ALGOLIA_APP_ID = "";
+  var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var SEARCH_SERVICE = "";
+  var universalSearchConfig = {};
+  if (SEARCH_SERVICE === 'google') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      apiKey: GOOGLE_CUSTOM_SEARCH_API_KEY,
+      engineId: GOOGLE_CUSTOM_SEARCH_ENGINE_ID,
+      imagePath: "/img/"
+    };
+  } else if (SEARCH_SERVICE === 'algolia') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      apiKey: ALGOLIA_API_KEY,
+      appId: ALGOLIA_APP_ID,
+      indexName: ALGOLIA_INDEX_NAME,
+      imagePath: "/img/"
+    };
+  } else if (SEARCH_SERVICE === 'azure') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      serviceName: AZURE_SERVICE_NAME,
+      indexName: AZURE_INDEX_NAME,
+      apiKey: AZURE_QUERY_KEY,
+      imagePath: "/img/"
+    };
+  }
 </script>
+<script src="/js/app.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+
+<script>setLoadingBarProgress(100);</script>
 
 </body>
 </html>
