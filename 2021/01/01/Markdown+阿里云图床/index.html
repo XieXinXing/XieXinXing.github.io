@@ -15,7 +15,7 @@
 <meta property="og:description" content="纯粹无聊打发时间而已。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/wyeder.jpg">
-<meta property="og:updated_time" content="2021-01-15T19:00:03.200Z">
+<meta property="og:updated_time" content="2021-01-15T19:04:06.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 <meta name="twitter:description" content="纯粹无聊打发时间而已。">
@@ -354,7 +354,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-01-15 19:00:03'>2021-01-01 21:40</time>
+            Created At : <time class="date" title='Updated At: 2021-01-15 19:04:06'>2021-01-01 21:40</time>
         
     </div>
     <div class="article-meta">
@@ -456,9 +456,10 @@ cmd /k &quot;cd /d D:\Install\ForCode\ossutil64 &amp;&amp; ossutil64 cp %p1% oss
 </code></pre>
 <blockquote>
 <p>MD 中以 <code>![]()</code> 方式插入如图片不支持大小和位置修改，但是 MD 支持 Html ，可以使用以下格式控制图片大小和左右居中位置：</p>
-<pre><code>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;path&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;name&quot;/&gt;&lt;/div&gt;
-</code></pre><p>因此上述 Bat 文件中最后的命令也可以修改为：</p>
-<pre><code class="text">@ECHO OFF
+<pre><code class="html">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;path&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;name&quot;/&gt;&lt;/div&gt;
+</code></pre>
+<p>因此上述 Bat 文件中最后的命令也可以修改为：</p>
+<pre><code class="bat">@ECHO OFF
 set para1=%1
 set p1=%para1:&quot;=%
 set p2=%para1:~37,-1% ::由于我修改了图片保存路径，因此这里以及下方改变了参数
