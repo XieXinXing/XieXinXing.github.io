@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>自动部署 Hexo 静态博客 | 谢欣欣已经长大</title>
+  <meta name="keywords" content=" Hexo , Travis CI , Github Action ">
+  <meta name="description" content="自动部署 Hexo 静态博客 | 谢欣欣已经长大">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="纯粹无聊打发时间而已。">
+<meta name="keywords" content="关于">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="/about/index.html">
+<meta property="og:site_name" content="谢欣欣已经长大">
+<meta property="og:description" content="纯粹无聊打发时间而已。">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/wyeder.jpg">
+<meta property="og:updated_time" content="2021-01-15T19:00:03.200Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="about">
+<meta name="twitter:description" content="纯粹无聊打发时间而已。">
+<meta name="twitter:image" content="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGO/wyeder.jpg">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0"></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.1.0"></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value>
+  <input class="theme_blog_path" value>
+  <input id="theme_shortcut" value="true">
+  <input id="theme_highlight_on" value="true">
+  <input id="theme_code_copy" value="true">
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>长大的谢星星</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/XieXinXing"
+               target="_blank">
+                
+                    <i class="iconfont icon-github"></i>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:kisunley@163.com"
+               target="_blank">
+                
+                    <i class="iconfont icon-email"></i>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=786665925&site=qq&menu=yes"
+               target="_blank">
+                
+                    <i class="iconfont icon-qq"></i>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(5)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="记录">
+                        
+                        记录
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="生活">
+                        
+                        生活
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="5">
+<input type="hidden" id="yelog_site_word_count" value="7.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AliyunOSS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Github Action</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jsDelivr</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PicGo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ShareX</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Travis CI</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Typora</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>VSCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>随想</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All 记录 "
+           href="/2021/01/06/jsDelivr+Github搭建CDN图床/"
+           data-tag="Github,jsDelivr"
+           data-author="" >
+            <span class="post-title" title="jsDelivr+Github搭建CDN图床">jsDelivr+Github搭建CDN图床</span>
+            <span class="post-date" title="2021-01-06 20:07:22">2021/01/06</span>
+        </a>
+        
+        <a  class="All 记录 "
+           href="/2021/01/01/Markdown+阿里云图床/"
+           data-tag="Markdown,AliyunOSS,Typora,PicGo,ShareX,VSCode"
+           data-author="" >
+            <span class="post-title" title="Markdown + 阿里云图床">Markdown + 阿里云图床</span>
+            <span class="post-date" title="2021-01-01 21:40:32">2021/01/01</span>
+        </a>
+        
+        <a  class="All 生活 "
+           href="/2020/12/20/缘何而来/"
+           data-tag="随想"
+           data-author="" >
+            <span class="post-title" title="缘何而来">缘何而来</span>
+            <span class="post-date" title="2020-12-20 01:36:15">2020/12/20</span>
+        </a>
+        
+        <a  class="All 记录 "
+           href="/2020/12/20/CI部署Hexo博客/"
+           data-tag="Hexo,Travis CI,Github Action"
+           data-author="" >
+            <span class="post-title" title="自动部署 Hexo 静态博客">自动部署 Hexo 静态博客</span>
+            <span class="post-date" title="2020-12-20 01:17:32">2020/12/20</span>
+        </a>
+        
+        <a  class="All 记录 "
+           href="/2020/12/20/Hexo+Github搭建博客/"
+           data-tag="Hexo,Github,Blog"
+           data-author="" >
+            <span class="post-title" title="Hexo+Github 搭建博客记录">Hexo+Github 搭建博客记录</span>
+            <span class="post-date" title="2020-12-20 01:17:32">2020/12/20</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-CI部署Hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">自动部署 Hexo 静态博客</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="记录">记录</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Hexo</a>
+            
+            <a class="color5">Travis CI</a>
+            
+            <a class="color4">Github Action</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-01-15 19:00:03'>2020-12-20 01:17</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:2.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">利用Travis_CI自动部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">新建GitHub仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">Travis_CI关联项目仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">添加.travis.yml文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">push源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">设置Github_Pages</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">进一步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">利用Github_Action自动部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">配置Github_Token</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">Push源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">配置 GitHub Actions</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">使用自定义域名访问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">Project page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">总结</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>引言：原本根据 <a href="https://www.jianshu.com/p/60de63b14ae5?from=jiantop.com" target="_blank" rel="noopener">Hexo的版本控制与持续集成</a>，想要使用 <a href="https://ci.appveyor.com/" target="_blank" rel="noopener">AppVeyor</a> 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。后来根据 <a href="https://hexo.io/zh-cn/docs/github-pages#" target="_blank" rel="noopener">将 Hexo 部署到 GitHub Pages</a>，成功利用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将源码备份到 Github 仓库，并实现自动编译部署到分支。再后来了解到 <a href="https://github.com/actions" target="_blank" rel="noopener">Github Action</a> 本身就具有免费的 CI 功能，于是实现将源码 PUSH 到私密仓库，再自动推送到博客文件所在仓库。</p>
+<h1><span id="利用travis_ci自动部署">利用Travis_CI自动部署</span></h1><blockquote>
+<p> CI，即持续集成 (Continuous Integration)，是在源代码变更后自动检测、拉取、构建和进行单元测试的过程。这种方法与前面直接进行部署的方法不同，是从使用 <code>hexo cl &amp; hexo g &amp; hexo d</code> 的前一步开始的。</p>
+</blockquote>
+<h2><span id="新建github仓库">新建GitHub仓库</span></h2><p>创建一个用来存储 Hexo 项目源代码和静态页面的 <a href="https://github.com/new" target="_blank" rel="noopener">GitHub 仓库</a>，如果你希望你的站点能通过 <code>&lt;GitHub 用户名&gt;.github.io</code> 域名访问， repository 应该直接命名为 <code>&lt;GitHub 用户名&gt;.github.io</code>。</p>
+<ul>
+<li>用 <code>master 分支</code> 来存储 hexo 博客项目源代码。</li>
+<li>用 <code>gh-pages 分支</code> 存储来编译生成后静态页面。</li>
+</ul>
+<p>当 <code>master 分支</code>的源代码（主题文件，文章 md 文件、图片等）有变动时，CI 会自动编译并部署到 <code>gh-pages 分支</code>。</p>
+<blockquote>
+<p>注：使用Travis需要将源码放在<code>&lt;GitHub 用户名&gt;.github.io</code> ，由于前面已经将<code>&lt;GitHub 用户名&gt;.github.io</code> 进行了博客部署，因此要么将仓库删除重建或者移到分支，要么新注册账号。建议直接删除重建，后者还涉及不同 Github 布置 SSH 问题。如果不想麻烦，建议跳到后面 <a href="#利用Github_Action自动部署">利用Github_Action自动部署</a>。</p>
+</blockquote>
+<h2><span id="travis_ci关联项目仓库">Travis_CI关联项目仓库</span></h2><p>在<strong>用户头像处</strong>点击 <code>Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate new token</code> 创建 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github 访问令牌</a> ，<strong>名称</strong>随意，勾选 <code>repo</code> 选项，然后复制密匙：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229213904534.png"></div> 
+
+<p>使用 GitHub 账号登录 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI 官网</a>，关联你的 hexo 博客项目仓库。在所列出来的仓库里找到你的 <code>hexo 项目仓库</code>，点击 <code>Settings</code> 。增加环境变量，名称随意但是<strong>后面需要使用</strong>，我在这里设置为<code>GH_TOKEN</code> ，值一栏粘贴入在前面生成的 <code>GitHub Token</code>，最后点击 <strong>Add</strong> 添加：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229222055509.png"></div> 
+
+<h2><span id="添加travisyml文件">添加.travis.yml文件</span></h2><p>在你的 Hexo 博客项目<strong>根文件夹</strong>下添加 Travis CI 的配置文件 <code>.travis.yml</code>。</p>
+<p><code>.travis.yml</code> 文件的内容如下：</p>
+<pre><code>sudo: false
+language: node_js
+node_js:
+  - 12
+cache: npm
+branches:
+  only:
+    - master # build master branch only
+script:
+  - hexo generate
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN   #这里为环境变量名称
+  keep-history: true
+  on:
+    branch: master
+  local-dir: public
+</code></pre><h2><span id="push源码">push源码</span></h2><p>将你的 hexo 项目代码 push 到 GitHub 仓库的 <code>master 分支</code>，Travis CI 检测到 master 分支代码有变动，会自动执行脚本命令，将 hexo 项目编译生成静态页面，部署到 <code>gh-pages</code> 分支。</p>
+<p>部署方法，在 Hexo项目根目录右键 <code>Git Bash Here</code>：</p>
+<pre><code class="git">1. git init      #首次Push
+2. git remote add origin https://github.com/Lykisun/xxx.git  #首次Push
+3. git add .     #首次Push，后面也可将.改为发生变动的文件
+4. git commit -m &quot;init&quot;     #引号内为注释内容
+5. git push -u origin msater  
+</code></pre>
+<blockquote>
+<p>若命令2报错：<code>git remote add origin https://github.com/Lykisun/xxx.git</code></p>
+<p>则先执行：<code>git remote rm origin</code></p>
+<p>然后再执行：<code>git remote add origin https://github.com/Lykisun/xxx.git</code></p>
+<p>其他报错自行搜索皆有解决方案。</p>
+</blockquote>
+<h2><span id="设置github_pages">设置Github_Pages</span></h2><p>在 GitHub 中前往<strong>仓库</strong>的 <code>setting-&gt;Options</code>，往下修改 <code>GitHub Pages</code> 的部署分支为 <code>gh-pages</code> 然后 <strong>Save</strong>，即可通过<code>&lt;你的 GitHub 用户名&gt;.github.io</code> 域名访问（这里我已经删除gh-pages分支因此没有显示）：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229223430565.png"></div>  
+
+<p>如果<strong>显示404</strong>只需要等待一段时间。</p>
+<h1><span id="进一步">进一步</span></h1><p>参考了几篇文章，失败了好多次，终于成功使用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将 Hexo 博客部署到 GitHub Pages 上，但这也意味着站点文件将会是公开的。虽然并没有什么重要文件，但是还是希望能够把源码放在私密仓库。</p>
+<p>一开始的时候我就觉得应该有两种<strong>思路</strong>： </p>
+<ol>
+<li>源码推送到<code>User.github.io</code>公开仓库，<code>hexo g</code>后推送到分支，将分支作为博客仓库；</li>
+<li>源码推送到<code>private</code>私密仓库，然后自动构建<code>public</code>文件推送到<code>User.github.io</code> 公开仓库。</li>
+</ol>
+<p>由于一开始我就已经建立了部署博客的<code>User.github.io</code> 公开仓库，因此在尝试第一种思路的时候我特意去新申请了一个 Github 账号，不同账号使用 SSH 也出现了让我头秃的问题。但是第二种思路并不需要我们改动已经建立好的博客。</p>
+<p>第一种思路成功后我就开始尝试第二种。我在搜索后没有发现<strong>利用 Travis CI 使用私密仓库跨仓库部署推送的相关文章</strong>，好像之前 Travis CI 对于私密仓库是收费的，现在免费但也有次数限制。进行了好几次尝试之后，每次要么编译失败，要么就只是部署到原仓库的分支，于是放弃。</p>
+<p>最后我搜索到 <a href="https://segmentfault.com/a/1190000021815477" target="_blank" rel="noopener">使用 GitHub Actions 自动部署博客教程</a> ，发现 Github 本身就有免费的 CI 功能，于是开始尝试利用 Github Action 开始了第二种思路。</p>
+<h1><span id="利用github_action自动部署">利用Github_Action自动部署</span></h1><h2><span id="配置github_token">配置Github_Token</span></h2><p>在<strong>用户头像处</strong>点击 <code>Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate new token</code> 创建 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github 访问令牌</a> ，<strong>名称</strong>随意，勾选 <code>repo</code> 选项，然后复制密匙：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229213904534.png"></div> 
+
+<p>新建用来存放源码的<strong>私密仓库</strong>，名称无妨，在<strong>仓库</strong>的 <code>Setting-&gt;Secrets-&gt;New repositorysecret</code> 添加新<strong>Secret</strong>，名称随意但是<strong>后面需要使用</strong>，我这里设置为 <code>ACCESS_TOKEN</code>，内容粘贴入刚才复制的 <code>token</code> ：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229214844338.png"></div> 
+
+<blockquote>
+<p>不同文章设置不太一样，有的用生成的ssh设置的，有的还要设置博客仓库的Deploy keys的，不过我用那些方法都失败了，只用上述办法才成功。</p>
+</blockquote>
+<h2><span id="push源码">Push源码</span></h2><p>同第一节<a href="#PUSH源码">PUSH</a>小节。</p>
+<h2><span id="配置-github-actions">配置 GitHub Actions</span></h2><p>在<strong>私密仓库</strong>的 <code>Action-&gt;New workflow</code> 添加新 Action 文件，这里有很多 Action 模板和别人造好的 Action，后续需要可以进行了解使用，这里我们直接选择 <code>set up a workflow yourself</code>，会在仓库新建 <code>.github/workflows/xxx.yml</code> ，然后填入以下内容：</p>
+<pre><code class="yml"># workflow name
+name: CI Hexo Blog Deploy LTS
+
+# master branch on push, auto run
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  Deploy-Pages: 
+    name: Deploy Hexo Public To Pages
+    runs-on: ubuntu-latest 
+
+    steps:
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master 
+
+    # from: https://github.com/actions/setup-node  
+    - name: Setup Node.js 12.x 
+      uses: actions/setup-node@master
+      with:
+        node-version: &quot;12.x&quot;
+
+    - name: Setup Git Infomation
+      run: | 
+        git config --global user.name &#39;Github用户名&#39;           #修改处
+        git config --global user.email &#39;Github注册邮箱&#39;        #修改处
+
+    - name: Get Latest Commit Message 
+      run: |
+        git log --pretty=format:&quot;%s from Github Actions at `date +&quot;%Y-%m-%d %H:%M:%S&quot;`&quot; --date=short -n 1  &gt; commit-message.log
+
+    - name: Setup Hexo Dependencies
+      run: |
+        npm install hexo-cli -g
+        npm install
+
+    - name: Generate public files
+      run: |
+        hexo clean
+        hexo generate 
+
+    - name: Deploy To Github Pages 
+      env:
+        Github_Pages: github.com/Github用户名/Github用户名.github.io    #修改处
+        Github_Token: ${{ secrets.ACCESS_TOKEN }}                      #修改处
+      run: |  
+        git clone https://${Github_Pages} .github_pages
+        cd .github_pages
+        git checkout master
+        cd ../
+        mv .github_pages/.git/ ./public/
+        cd ./public/
+        git add .
+        git commit -F ../commit-message.log
+        git push --force --quiet &quot;https://${Github_Token}@${Github_Pages}&quot; master:master
+</code></pre>
+<blockquote>
+<p>注：以上需要更改 <strong>Github用户名</strong>、<strong>Github注册邮箱</strong>，以及刚才你设置的 <strong>Secret 名称</strong>。</p>
+<p>有的相关文章中直接使用了别人的 Action ，但是我使用后一直出现 <code>fatal: could not read Username for https://github.com: No such file or directory</code> 的错误，没有找到解决方法，就换了一种方式。</p>
+</blockquote>
+<p>完成后提交到仓库，就会开始自动构建并部署：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229220335065.png"></div> 
+
+<p>在我重新进行部署的时候，由于我用另一个账号新建了 <code>Github用户名.github.io</code> 仓库，然后将源码推送到新建的<strong>私密仓库</strong>，再建立 Action 后，出现了以下错误：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229233904987.png"></div> 
+
+<p>这是由于<code>Github用户名.github.io</code> 仓库并没有 <strong>master</strong> 分支的缘故（如果之前用本地 Hexo d 建立的仓库未删除就不需会有此问题），因此可以 PUSH 一个 README 文件上去并将其设为 <strong>master</strong> 分支，或者直接建立的时候勾选 README 选项，当然也可以在仓库建立，我就是直接新建的，不过这样产生的分支名称是 <strong>main</strong> ，上述 <code>xxx.yml</code> Action文件就要调整 <code>master</code> 为 <code>main</code>：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229235139425.png"></div> 
+
+<p>然后就成功了：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201229235239701.png"></div> 
+
+<p>之后就可以看到博客的更新了。今后可以在源码仓库直接修改文件或者本地修改后推送到源码仓库，就会自动构建然后推送到博客仓库，一来备份了源码，二来免去部署步骤。</p>
+<hr>
+<p>在我更新两篇文章后，Action 出现以下错误：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011102921.png"></div> 
+
+<p>改了改又后来出现错误：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012250184.png"></div> 
+
+<p>搜索后发现原因和办法：</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230012315603.png"></div> 
+
+<h1><span id="其他">其他</span></h1><h3><span id="使用自定义域名访问">使用自定义域名访问</span></h3><p>你可以使用自己的域名来访问 GitHub Pages 服务，只需在 hexo 项目的 <code>source</code> 目录下添加 <code>CNANE</code> 文件。</p>
+<p><code>CNANE</code> 文件内容为自定义域名，例如：xxx.xxx.cn，然后在仓库 <code>Settings</code> 开启<strong>域名 https 协议</strong>。</p>
+<div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230010305353.png"></div>  
+
+<h3><span id="project-page">Project page</span></h3><p>如果你更希望你的站点部署在 <code>&lt;你的 GitHub 用户名&gt;.github.io</code> 的子目录中，你的 repository 需要直接命名为子目录的名字，这样你的站点可以通过 <code>&lt;你的 GitHub 用户名&gt;.github.io/&lt;repository 的名字&gt;</code> 访问。你需要检查你的 Hexo 配置文件，将 <code>url</code> 修改为 <code>&lt;你的 GitHub 用户名&gt;.github.io/&lt;repository 的名字&gt;</code>、将 <code>root</code> 的值修改为 <code>/&lt;repository 的名字&gt;/</code></p>
+<h3><span id="总结">总结</span></h3><p>尝试下来，当然是 Github Action 更加简单快捷，而且是免费的，功能更加丰富，因此建议使用 Github Action。当然还有其他的CI工具，我就没有试用了。</p>
+<hr>
+<p><em>参考链接</em></p>
+<p><a href="https://keep.xpoet.cn/2020/11/%E4%BD%BF%E7%94%A8-Travis-CI-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">使用 Travis CI 自动部署 Hexo 静态博客</a></p>
+<p><a href="https://docs.travis-ci.com/user/deployment/pages/" target="_blank" rel="noopener">GitHub Pages Deployment</a></p>
+<p><a href="https://hexo.io/zh-cn/docs/github-pages#" target="_blank" rel="noopener">将 Hexo 部署到 GitHub Pages</a></p>
+<p><a href="https://segmentfault.com/a/1190000021815477" target="_blank" rel="noopener">使用 GitHub Actions 自动部署博客教程</a></p>
+<p><a href="https://www.cnblogs.com/deppwang/p/12326906.html" target="_blank" rel="noopener">使用 GitHub Actions 实现 Hexo 博客自动部署</a></p>
+<p><a href="https://gyh.im/posts/9d3b758e/" target="_blank" rel="noopener">Github_Action自动构建Hexo实现Coding和Github双部署</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank" rel="noopener">GitHub Actions 入门教程</a></p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2020-2021 XieXinXing
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
