@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>博客调整记录</title>
+      <link href="2021/01/17/%E5%8D%9A%E5%AE%A2%E8%B0%83%E6%95%B4%E8%AE%B0%E5%BD%95/"/>
+      <url>2021/01/17/%E5%8D%9A%E5%AE%A2%E8%B0%83%E6%95%B4%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>博客搭建后进行一些调整的记录。</p><a id="more"></a><h1><span id="主题更换">主题更换</span></h1><p>因为个人能力有限，自行修改主题对我来说还是不如使用别人的主题。先后尝试了很多主题，包括 <a href="https://github.com/theme-next" target="_blank" rel="noopener">Next</a>、<a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">Sakura</a>、<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a>、<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">Yilia</a>、<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Matery</a>等等，相对合我口味的有Spfk、<a href="https://github.com/artchen/hexo-theme-memory" target="_blank" rel="noopener">Momery</a> 和 <a href="https://github.com/Litreily/hexo-theme-snark" target="_blank" rel="noopener">Snark</a>。</p><p>设置参数根据主题仓库配置即可。</p><h2><span id="html添加点击跳转联系方式">Html添加点击跳转联系方式</span></h2><ul><li>直接添加 URL</li><li>邮件：<code>mailto:xxx@xxx.com</code></li><li>QQ： <code>tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=QQ号&amp;website=www.oicqzone.com</code></li><li>TG：<code>tg://resolve?domain=用户名</code></li></ul><h2><span id="含链接图片关闭fancybox">含链接图片关闭fancybox</span></h2><p>图片添加超链接后，添加 <code>class=&quot;nofancybox&quot;</code> 属性即可：</p><div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-17_1610818269.png"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jsDelivr+Github搭建CDN图床</title>
       <link href="2021/01/06/jsDelivr+Github%E6%90%AD%E5%BB%BACDN%E5%9B%BE%E5%BA%8A/"/>
       <url>2021/01/06/jsDelivr+Github%E6%90%AD%E5%BB%BACDN%E5%9B%BE%E5%BA%8A/</url>
@@ -13,7 +32,7 @@
       
       <categories>
           
-          <category> 记录 </category>
+          <category> 技术 </category>
           
       </categories>
       
@@ -40,7 +59,7 @@
       
       <categories>
           
-          <category> 记录 </category>
+          <category> 技术 </category>
           
       </categories>
       
@@ -75,7 +94,7 @@
       
       <categories>
           
-          <category> 记录 </category>
+          <category> 技术 </category>
           
       </categories>
       
@@ -104,7 +123,7 @@
       
       <categories>
           
-          <category> 记录 </category>
+          <category> 技术 </category>
           
       </categories>
       
