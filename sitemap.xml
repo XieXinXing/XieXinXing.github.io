@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2020/12/20/CI%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/2020/12/20/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/2021/01/01/Markdown+%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/2021/01/06/jsDelivr+Github%E6%90%AD%E5%BB%BACDN%E5%9B%BE%E5%BA%8A/</loc>
     
     <lastmod>2021-01-17</lastmod>
@@ -100,13 +121,6 @@
   </url>
   
   <url>
-    <loc>/theme-sakura/index.html</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/video/index.html</loc>
     
     <lastmod>2021-01-17</lastmod>
@@ -114,21 +128,7 @@
   </url>
   
   <url>
-    <loc>/2020/12/20/CI%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/2020/12/20/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2021-01-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/2021/01/01/Markdown+%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>/theme-sakura/index.html</loc>
     
     <lastmod>2021-01-17</lastmod>
     
