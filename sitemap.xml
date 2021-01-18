@@ -2,133 +2,133 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2020/12/20/CI%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://github.com/XieXinXing/2020/12/20/CI%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/2020/12/20/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://github.com/XieXinXing/2020/12/20/Hexo+Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/2021/01/01/Markdown+%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://github.com/XieXinXing/2021/01/01/Markdown+%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/2021/01/06/jsDelivr+Github%E6%90%AD%E5%BB%BACDN%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://github.com/XieXinXing/2021/01/06/jsDelivr+Github%E6%90%AD%E5%BB%BACDN%E5%9B%BE%E5%BA%8A/</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/2021/01/17/%E5%8D%9A%E5%AE%A2%E8%B0%83%E6%95%B4%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://github.com/XieXinXing/2021/01/17/%E5%8D%9A%E5%AE%A2%E8%B0%83%E6%95%B4%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/about/index.html</loc>
+    <loc>https://github.com/XieXinXing/about/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/archives/index.html</loc>
+    <loc>https://github.com/XieXinXing/archives/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/bangumi/index.html</loc>
+    <loc>https://github.com/XieXinXing/bangumi/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/categories/index.html</loc>
+    <loc>https://github.com/XieXinXing/categories/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>https://github.com/XieXinXing/client/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
+    <loc>https://github.com/XieXinXing/comment/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/donate/index.html</loc>
+    <loc>https://github.com/XieXinXing/donate/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/lab/index.html</loc>
+    <loc>https://github.com/XieXinXing/lab/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/links/index.html</loc>
+    <loc>https://github.com/XieXinXing/links/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/music/index.html</loc>
+    <loc>https://github.com/XieXinXing/music/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>https://github.com/XieXinXing/rss/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>https://github.com/XieXinXing/tags/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/theme-sakura/index.html</loc>
+    <loc>https://github.com/XieXinXing/theme-sakura/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>https://github.com/XieXinXing/video/index.html</loc>
     
     <lastmod>2021-01-18</lastmod>
     
@@ -136,7 +136,7 @@
   
 
   <url>
-    <loc></loc>
+    <loc>https://github.com/XieXinXing</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -144,84 +144,84 @@
 
   
   <url>
-    <loc>/tags/Hexo/</loc>
+    <loc>https://github.com/XieXinXing/tags/Hexo/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Travis-CI/</loc>
+    <loc>https://github.com/XieXinXing/tags/Travis-CI/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Github-Action/</loc>
+    <loc>https://github.com/XieXinXing/tags/Github-Action/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Github/</loc>
+    <loc>https://github.com/XieXinXing/tags/Github/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Blog/</loc>
+    <loc>https://github.com/XieXinXing/tags/Blog/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Markdown/</loc>
+    <loc>https://github.com/XieXinXing/tags/Markdown/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/AliyunOSS/</loc>
+    <loc>https://github.com/XieXinXing/tags/AliyunOSS/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/Typora/</loc>
+    <loc>https://github.com/XieXinXing/tags/Typora/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/PicGo/</loc>
+    <loc>https://github.com/XieXinXing/tags/PicGo/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/ShareX/</loc>
+    <loc>https://github.com/XieXinXing/tags/ShareX/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/VSCode/</loc>
+    <loc>https://github.com/XieXinXing/tags/VSCode/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/tags/jsDelivr/</loc>
+    <loc>https://github.com/XieXinXing/tags/jsDelivr/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -230,7 +230,7 @@
 
   
   <url>
-    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://github.com/XieXinXing/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
