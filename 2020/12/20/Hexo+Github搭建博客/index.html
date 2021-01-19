@@ -1,20 +1,16 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="春立复冬至，青丝即白雪。"><meta name="theme-color"><meta name="baidu-site-verification"><title>Hexo + Github 搭建博客记录 | 谢欣欣已经长大♥</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script></head><link rel="stylesheet" type="text/css" href="/css/customize.css"><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/plugins/prettify/prettify.js"></script><script type="text/javascript" src="/js/ready.js" async></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><body class="night"><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">谢欣欣已经长大♥</a></h1></div><p class="m-desc">立春复冬至, 青丝即白雪。</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/categories/">分类</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">Hexo + Github 搭建博客记录</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/12/20/Hexo+Github搭建博客/">2020-12-20</a></span><span class="p-category"><i class="fa fa-folder"></i><a href="/categories/技术/">技术</a></span></div></div><div class="p-content"><p><em>部署在 Github 的 Hexo 博客搭建过程记录。</em></p>
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="春立复冬至，青丝即白雪。"><meta name="theme-color"><meta name="baidu-site-verification"><title>Hexo + Github 搭建博客记录 | 谢欣欣已经长大♥</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><link rel="stylesheet" type="text/css" href="/css/customize.css"><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/plugins/prettify/prettify.js"></script><script type="text/javascript" src="/js/ready.js" async></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><body class="night"><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">谢欣欣已经长大♥</a></h1></div><p class="m-desc">立春复冬至, 青丝即白雪。</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/categories/">分类</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">Hexo + Github 搭建博客记录</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/12/20/Hexo+Github搭建博客/">2020-12-20</a></span><span class="p-category"><i class="fa fa-folder"></i><a href="/categories/技术/">技术</a></span></div></div><div class="p-content"><p><em>部署在 Github 的 Hexo 博客搭建过程记录。</em></p>
 <a id="more"></a>
-<p>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<s>复制</s><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。</p>
-<h1>博客搭建</h1>
-<h2 id="前期准备">前期准备</h2>
-<pre><code class="language-html">本博客在 Window10 环境下搭建。
+<p>引言：闲来无事心血来潮想码码代码，于是便想搭建一个博客，起初是想学 Python，于是通过搜索终于看见一篇 <code>Python+Django</code> 搭建博客的挺详细的教程：<a href="https://www.dusaiphoto.com/article/2/" target="_blank" rel="noopener">Django 搭建个人博客</a>，于是兴高采烈地跟着<del>复制</del><strong>码</strong>代码，可是到后面我突然意识到，要部署到服务器意味着要购买域名和云服务器，然后进行配置，一来麻烦二来烧钱，不过是玩玩而已，遂放弃。接着我又看到 <code>PHP+WordPress</code> 搭建博客的教程：<a href="https://www.ghpym.com/ghjz001.html" target="_blank" rel="noopener">果核建站教程</a>，相比于之前自己码一堆代码，这个方便很多，但是同样要购买云服务器和域名的。后来我在B站看到 <code>Gitee+Hexo</code> 搭建博客教程：<a href="https://www.bilibili.com/video/BV1uE411L7kB?from=search&amp;seid=10102720236753141589" target="_blank" rel="noopener">零成本-搭建私人永久博客</a>，才知道可将博客托管到 Gitee 或者 Github 上。于是进而搜索到几篇相对详细的关于 <code>Github+Hexo</code> 搭建免费博客的教程，其参考链接附在文末。</p>
+<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><pre><code class="html">本博客在 Window10 环境下搭建。
 </code></pre>
 <ul>
 <li>安装 Git、Node.js</li>
 </ul>
 <p>下载并安装 <a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git</a>、<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。除了安装路径，我全部选择默认选项安装。</p>
 <blockquote>
-<p>安装完成后可以运行以下命令行验证是否安装完成：<br>
-<code>git --version</code><br>
-<code>node -v</code><br>
-<code>npm -v</code><br>
-若出错可尝试检查环境变量路径或重启电脑或重新安装。</p>
+<p>安装完成后可以运行以下命令行验证是否安装完成：<br><code>git --version</code><br><code>node -v</code><br><code>npm -v</code><br>若出错可尝试检查环境变量路径或重启电脑或重新安装。</p>
 </blockquote>
 <ul>
 <li>安装 Hexo</li>
@@ -33,8 +29,7 @@
 <p>若出现错误，根据错误直接百度。</p>
 <p>安装完成后查看是否成功：<code>hexo -v</code></p>
 </blockquote>
-<h2 id="初始化-Hexo">初始化 Hexo</h2>
-<ul>
+<h2 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h2><ul>
 <li>创建文件夹</li>
 </ul>
 <p>根据自己情况选择合适位置建立文件夹用以存放相应文件，例：<code>D:\Blog</code>。</p>
@@ -89,28 +84,27 @@
 <li>浏览本地博客</li>
 </ul>
 <p>运行以下命令：</p>
-<p><code>hexo g</code><br>
-<code>hexo s</code></p>
+<p><code>hexo g</code><br><code>hexo s</code></p>
 <blockquote>
 <p>更多 hexo 命令参考：<a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">hexo常用命令笔记</a></p>
 </blockquote>
 <p>在浏览器输入<code>localhost:4000</code>，可浏览本地博客效果：</p>
 <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/ossutil/LYKISUN_2021-01-17_1610888346.png"></div>
+
+
 <p>按 <code>Ctrl+C</code> 可关闭 server。</p>
-<h2 id="博客写作">博客写作</h2>
-<ul>
+<h2 id="博客写作"><a href="#博客写作" class="headerlink" title="博客写作"></a>博客写作</h2><ul>
 <li>新增博客</li>
 </ul>
 <p>可在 <code>D:\Blog\source\_posts</code> 文件夹下新建 <code>博文标题.md</code> 文件。</p>
-<p>也可运行命令行 <code>hexo new &quot;博文标题&quot;</code>，新生成文件开头是一些初始化设置，可以在 <code>\scaffolds\posts.md</code> 中修改默认设置:</p>
+<p>也可运行命令行 <code>hexo new "博文标题"</code>，新生成文件开头是一些初始化设置，可以在 <code>\scaffolds\posts.md</code> 中修改默认设置:</p>
 <pre><code>---
 title: {{ title }}
 date: {{ date }}
 tags: 
 top:
 ---
-</code></pre>
-<p>同样在 <code>\scaffolds</code> 文件夹中可以自己建立模板，例如 <code>demo.md</code>，输入命令 <code>hexo new demo &quot;博文标题&quot;</code> 就可以直接使用模板了。</p>
+</code></pre><p>同样在 <code>\scaffolds</code> 文件夹中可以自己建立模板，例如 <code>demo.md</code>，输入命令 <code>hexo new demo "博文标题"</code> 就可以直接使用模板了。</p>
 <pre><code>---
 title: 示例
 date: 2020-12-20 18:10:10
@@ -120,126 +114,91 @@ tags:
 top: 3 #自定义文章排序
 ---
 正文
-</code></pre>
-<blockquote>
+</code></pre><blockquote>
 <p>注意:</p>
 <p><code>_config.yml</code> 中有个 <code>permalink</code> 设置，默认为 <code>permalink: :year/:month/:day/:title/</code>，即存放博客文章的<code>永久链接</code>格式，例如新建了一篇 <code>Hexo+Github搭建博客记录</code> 博文，其将被存放到 Github 仓库的 <code>Lykisun.github.io/2020/12/20/Hexo+Github搭建博客记录/</code> 目录。</p>
 </blockquote>
 <blockquote>
-<p><strong>如何让博文列表不显示全部内容</strong>：<br>
-在合适的位置加上 <code>&lt;!--more--&gt;</code> 即可。</p>
+<p><strong>如何让博文列表不显示全部内容</strong>：<br>在合适的位置加上 <code>&lt;!--more--&gt;</code> 即可。</p>
 </blockquote>
-<h1>博客部署</h1>
-<blockquote>
+<h1 id="博客部署"><a href="#博客部署" class="headerlink" title="博客部署"></a>博客部署</h1><blockquote>
 <p>本博客选择部署到 <code>github</code> 上。</p>
 </blockquote>
-<h2 id="配置-GitHub-仓库">配置 GitHub 仓库</h2>
-<ul>
+<h2 id="配置-GitHub-仓库"><a href="#配置-GitHub-仓库" class="headerlink" title="配置 GitHub 仓库"></a>配置 GitHub 仓库</h2><ul>
 <li>申请 github 账号</li>
 <li>new repository</li>
 </ul>
 <p>点击右上角你的头像 -&gt; <code>Your repositories</code> -&gt; <code>New</code> 新建仓库。</p>
 <p>在 <code>Repository name</code> 一栏填入 <code>{GithubID}.github.io</code>（ <code>{GithubID}</code> 为你的 GitHub ID，与前面的 <code>Owner</code> 一致，例如我的是 <code>Lykisun/Lykisun.github.io</code> ），<code>Description</code> 可不填，然后点击 <code>Create repository</code> 添加新仓库。</p>
-<h2 id="配置-config-yml">配置 <strong>_config.yml</strong></h2>
-<ul>
+<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置 _config.yml"></a>配置 <strong>_config.yml</strong></h2><ul>
 <li>在 <code>_config.yml</code> 进行配置</li>
 </ul>
 <p>在文件末修改：</p>
-<pre><code class="language-yml">deploy:
+<pre><code class="yml">deploy:
   type: git
   repo: https://github.com/Github用户名/Github用户名.github.io.git
   branch: master
 </code></pre>
 <blockquote>
-<p>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github  </code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：git@githu .com:User/User.github.io.git`</p>
+<p>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github</code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：git@githu .com:User/User.github.io.git` </p>
 </blockquote>
-<h2 id="部署到-GitHub">部署到 GitHub</h2>
-<ul>
+<h2 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h2><ul>
 <li>配置 SSH Key</li>
 </ul>
-<p>输入命令 <code>ssh-keygen -t rsa -C {email}</code> 来生成 SSH，其中 <code>{email}</code> 为你注册 github 的邮箱账号，直接三次回车即可。<br>
-完成后用记事本打开 <code>C:\Users\用户名\.ssh\id_rsa.pub</code> 并复制 ssh key 公钥。<br>
-回到 GitHub，点击头像 -&gt; <code>Setting</code> -&gt; <code>SSH and GPG keys</code> -&gt; <code>New SSH key</code>， <code>Title</code> 可不填，将复制内容填入 <code>Key</code> 栏，然后点击 <code>Add SSH key</code>。<br>
-运行命令 <code>ssh -T git@github.com</code>，若出现 <code>Hi yourname! You've successfully authenticated, but GitHub does not provide shell access.</code> 表示 SSH 配置成功。</p>
+<p>输入命令 <code>ssh-keygen -t rsa -C {email}</code> 来生成 SSH，其中 <code>{email}</code> 为你注册 github 的邮箱账号，直接三次回车即可。<br>完成后用记事本打开 <code>C:\Users\用户名\.ssh\id_rsa.pub</code> 并复制 ssh key 公钥。<br>回到 GitHub，点击头像 -&gt; <code>Setting</code> -&gt; <code>SSH and GPG keys</code> -&gt; <code>New SSH key</code>， <code>Title</code> 可不填，将复制内容填入 <code>Key</code> 栏，然后点击 <code>Add SSH key</code>。<br>运行命令 <code>ssh -T git@github.com</code>，若出现 <code>Hi yourname! You've successfully authenticated, but GitHub does not provide shell access.</code> 表示 SSH 配置成功。</p>
 <p>输入命令 <code>npm install hexo-deployer-git --save</code> 安装 <code>deployer</code> 。</p>
 <ul>
 <li>部署博客</li>
 </ul>
-<p>依次输入命令：<br>
-<code>hexo clean</code><br>
-<code>hexo g</code><br>
-<code>hexo d</code><br>
-此过程第一次发布会弹出浏览器页面登陆Github验证并授权，显示 <code>INFO Deploy done: git</code> 即部署完成。打开你的 Github 仓库 <code>https://github.com/Lykisun/Lykisun.github.io/</code> 可以看见部署文件，打开 <code>Lykisun.github.io</code> 就可以看到你的博客了。</p>
+<p>依次输入命令：<br><code>hexo clean</code><br><code>hexo g</code><br><code>hexo d</code><br>此过程第一次发布会弹出浏览器页面登陆Github验证并授权，显示 <code>INFO Deploy done: git</code> 即部署完成。打开你的 Github 仓库 <code>https://github.com/Lykisun/Lykisun.github.io/</code> 可以看见部署文件，打开 <code>Lykisun.github.io</code> 就可以看到你的博客了。</p>
 <blockquote>
-<p>若出现错误 <code> git config --global user.email &quot;you@example.com&quot; git config --global user.name&quot;Your Name&quot;</code>，则按提示依次输入 <code>git config --global user.email &quot;邮箱&quot;</code>，<code>git config --global user.name &quot;Github ID&quot;</code> 并回车即可。<br>
-若出现其他错误可参考 <a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a>、<a href="https://www.jianshu.com/p/67c57c70f275" target="_blank" rel="noopener">hexo部署至Git遇到的坑</a> 相关错误解决办法，或直接搜索。</p>
+<p>若出现错误 <code>git config --global user.email "you@example.com"
+git config --global user.name"Your Name"</code>，则按提示依次输入 <code>git config --global user.email "邮箱"</code>，<code>git config --global user.name "Github ID"</code> 并回车即可。<br>若出现其他错误可参考 <a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a>、<a href="https://www.jianshu.com/p/67c57c70f275" target="_blank" rel="noopener">hexo部署至Git遇到的坑</a> 相关错误解决办法，或直接搜索。</p>
 </blockquote>
-<h1>博客美化</h1>
-<h2 id="主题下载">主题下载</h2>
-<p>在 Hexo官网<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo Themes</a>可浏览主题，然后通过 <code>git clone 主题的github地址 themes/{name}</code> （<code>{name}</code>为主题名字，推荐使用最受欢迎的主题 <code>next</code>）命令或者根据主题的 Github 主页说明进行安装获取主题，下载的主题在 <code>Blog\themes\</code> 文件夹中。<br>
-下载好主题后，打开根目录下的 <code>_config.yml</code>，搜索 <code>theme</code> 将 <code>theme: landscape</code> 修改为 <code>theme: 下载的主题名</code>。</p>
+<h1 id="博客美化"><a href="#博客美化" class="headerlink" title="博客美化"></a>博客美化</h1><h2 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a>主题下载</h2><p>在 Hexo官网<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo Themes</a>可浏览主题，然后通过 <code>git clone 主题的github地址 themes/{name}</code> （<code>{name}</code>为主题名字，推荐使用最受欢迎的主题 <code>next</code>）命令或者根据主题的 Github 主页说明进行安装获取主题，下载的主题在 <code>Blog\themes\</code> 文件夹中。<br>下载好主题后，打开根目录下的 <code>_config.yml</code>，搜索 <code>theme</code> 将 <code>theme: landscape</code> 修改为 <code>theme: 下载的主题名</code>。</p>
 <blockquote>
 <p>在 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo 官网</a>，点击图片为打开该主题的 Demo 博客，点击下方蓝色的文字即可打开该主题的 GitHub 主页</p>
 </blockquote>
-<h2 id="主题配置">主题配置</h2>
-<p>建议先使用配置完备的 <code>next</code> 主题，下载后打开 <code>Blog\themes\下载的主题\_config.yml</code> 主题配置文件进行配置，其配置参数一般可以在其 Github 主页或者直接在 <code>Blog\themes\下载的主题\README.md</code> 查看。例如 <code>Schemes</code> 参数：</p>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>建议先使用配置完备的 <code>next</code> 主题，下载后打开 <code>Blog\themes\下载的主题\_config.yml</code> 主题配置文件进行配置，其配置参数一般可以在其 Github 主页或者直接在 <code>Blog\themes\下载的主题\README.md</code> 查看。例如 <code>Schemes</code> 参数：</p>
 <pre><code># Schemes
 scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
-</code></pre>
-<p>可以选择不同主题样式，在其 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">GitHub 主页</a> 可以看到不同样式的 <code>Live Preview</code> 个人博客展示。<br>
-想阅读中文详细参数设置可参考：<a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">hexo博客搭建指北</a></p>
+</code></pre><p>可以选择不同主题样式，在其 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">GitHub 主页</a> 可以看到不同样式的 <code>Live Preview</code> 个人博客展示。<br>想阅读中文详细参数设置可参考：<a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E6%9C%AC%E5%9C%B0%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener">hexo博客搭建指北</a></p>
 <blockquote>
 <p>我在使用next主题时并没有什么问题，但是在更换其他主题，博客页面显示：</p>
 </blockquote>
 <div align="center"><img src="https://kisun-pic.oss-cn-shenzhen.aliyuncs.com/PicGo/image-20201230011740346.png"></div> 
+
 <blockquote>
-<p>搜索后查到： <code>原因是hexo在5.0之后把 swig 给删除了需要自己手动安装。</code><br>
-运行 <code>npm i hexo-renderer-swig</code> 后，过一会就正常了。</p>
+<p>搜索后查到： <code>原因是hexo在5.0之后把 swig 给删除了需要自己手动安装。</code><br>运行 <code>npm i hexo-renderer-swig</code> 后，过一会就正常了。</p>
 </blockquote>
-<h1>博客维护</h1>
-<p>上述方法部署博客，最终源码位于本地，生成文件部署在 Github 上。我们也可以将源码 PUSH 到 Github 上作为备份，当然这样子源码是公开的。</p>
-<h2 id="Push-源代码">Push 源代码</h2>
-<p>在 Github 新建仓库，在 Blog 文件夹 <code>Git Bash Here</code>。</p>
+<h1 id="博客维护"><a href="#博客维护" class="headerlink" title="博客维护"></a>博客维护</h1><p>上述方法部署博客，最终源码位于本地，生成文件部署在 Github 上。我们也可以将源码 PUSH 到 Github 上作为备份，当然这样子源码是公开的。</p>
+<h2 id="Push-源代码"><a href="#Push-源代码" class="headerlink" title="Push 源代码"></a>Push 源代码</h2><p>在 Github 新建仓库，在 Blog 文件夹 <code>Git Bash Here</code>。</p>
 <blockquote>
 <p>在2020年10月1起，Github 默认主分支从 master 更名为 main，以往提交方式会默认创建一个 master 分支，执行 <code>git config --global init.defaultBranch main</code>，可将本地 <code>git init</code> 的时候默认分支修改为 main。由于我们之前默认以 master 作为仓库主分支，因此在此不进行更改。</p>
 </blockquote>
-<p>运行以下命令：<br>
-<code>git init </code><br>
-<code>git add .</code><br>
-<code>git commit . -m &quot;initialize&quot;</code> //注释<br>
-<code>git remote add origin git@github.com:Lykisun/HexoBlog.git</code>   //本地仓库和远程github关联<br>
-<code>git pull --rebase origin master</code> //可选，若仓库存在例如README文件时报错可执行<br>
-<code>git push -u origin master</code></p>
+<p>运行以下命令：<br><code>git init</code><br><code>git add .</code><br><code>git commit . -m "initialize"</code> //注释<br><code>git remote add origin git@github.com:Lykisun/HexoBlog.git</code>   //本地仓库和远程github关联<br><code>git pull --rebase origin master</code> //可选，若仓库存在例如README文件时报错可执行<br><code>git push -u origin master</code>  </p>
 <blockquote>
-<p>进行文件更新时：</p>
+<p>进行文件更新时： </p>
 <p><code>git add 文件名</code></p>
-<p><code>git commit . -m &quot;注释&quot;</code></p>
-<p><code>git push -u origin main</code><br>
-删除分支：</p>
+<p><code>git commit . -m "注释"</code></p>
+<p><code>git push -u origin main</code><br>删除分支：</p>
 <p><code>git push origin :分支名称</code> （注意空格位置）</p>
 </blockquote>
-<h2 id="CI-控制">CI 控制</h2>
-<p>原本根据 <a href="https://www.jianshu.com/p/60de63b14ae5?from=jiantop.com" target="_blank" rel="noopener">Hexo的版本控制与持续集成</a>，想要使用 AppVeyor 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。</p>
+<h2 id="CI-控制"><a href="#CI-控制" class="headerlink" title="CI 控制"></a>CI 控制</h2><p>原本根据 <a href="https://www.jianshu.com/p/60de63b14ae5?from=jiantop.com" target="_blank" rel="noopener">Hexo的版本控制与持续集成</a>，想要使用 AppVeyor 来建立 CI，但是 AppVeyor 一直注册失败，加上根据评论看出会有不少问题，于是放弃该方案。</p>
 <p>后来根据 <a href="https://hexo.io/zh-cn/docs/github-pages#" target="_blank" rel="noopener">将 Hexo 部署到 GitHub Pages</a>，成功利用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将源码备份到 Github 仓库，并实现自动编译部署到分支。此后只需要将改动 PUSH 到仓库，就会自动进行部署博客。</p>
-<h2 id="问题">问题</h2>
-<ol>
-<li>若 <code>hexo d</code> 出现错误 <code> git config --global user.email &quot;you@example.com&quot; git config --global user.name&quot;Your Name&quot;</code>，则按提示依次输入 <code>git config --global user.email &quot;邮箱&quot;</code>，<code>git config --global user.name &quot;Github ID&quot;</code> 并回车即可。</li>
-<li>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github  </code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：<code>git@github.com:User/User.github.io.git</code>。</li>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li>若 <code>hexo d</code> 出现错误 <code>git config --global user.email "you@example.com"
+git config --global user.name"Your Name"</code>，则按提示依次输入 <code>git config --global user.email "邮箱"</code>，<code>git config --global user.name "Github ID"</code> 并回车即可。</li>
+<li>若 <code>hexo d</code> 出现 <code>fatal: unable to access https://github</code>类错误，将 <code>repo</code> 地址改为 <code>SSH</code> 地址：<a href="mailto:`git@github.com" target="_blank" rel="noopener">`git@github.com</a>:User/User.github.io.git`。</li>
 <li>若<code>git remote add origin https://github.com/Lykisun/xxx.git</code> 报错：<code>git remote add origin https://github.com/Lykisun/xxx.git</code>， 则执行：<code>git remote rm origin</code>，然后再执行：<code>git remote add origin https://github.com/Lykisun/xxx.git</code>。</li>
 </ol>
 <hr>
 <p><em>参考链接</em></p>
-<p><a href="https://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">搭建个人博客-hexo+github详细完整步骤</a><br>
-<a href="https://theme-materialized.github.io/how-to-build-a-hexo-blog/" target="_blank" rel="noopener">Hexo博客搭建—从入门到精通</a><br>
-<a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%86%99%E4%BD%9C" target="_blank" rel="noopener">hexo博客搭建指北</a><br>
-<a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a><br>
-<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">小茗同学的博客园</a><br>
-<a href="https://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">Hexo搭建Github静态博客</a><br>
-<a href="https://luuman.github.io/2015/12/27/GitHubHexo/" target="_blank" rel="noopener">使用GitHub搭建Hexo博客</a></p>
-</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:kisunley@163.com">长大了的谢星星★</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/12/20/Hexo+Github搭建博客/">https://xiexinxing.github.io/2020/12/20/Hexo+Github搭建博客/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">随意转载，注明出处♥</span></div><!--    span.p-copytight-value= '本博客文章采用'--><!--        a(rel='nofollow', target='_blank', href='https://creativecommons.org/licenses/by-nc/4.0/')  CC BY-NC 4.0 --><!--        | 许可协议，转载请注明出处。 --><!--        a(href=config.url)= config.author + '的博客'--></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tags"></i><a href="/tags/Hexo/">Hexo</a><a href="/tags/Github/">Github</a><a href="/tags/Blog/">Blog</a></span></div><openaside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前期准备"><span class="toc-number">1.1.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化-Hexo"><span class="toc-number">1.2.</span> <span class="toc-text">初始化 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客写作"><span class="toc-number">1.3.</span> <span class="toc-text">博客写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">2.</span> <span class="toc-text">博客部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-GitHub-仓库"><span class="toc-number">2.1.</span> <span class="toc-text">配置 GitHub 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-config-yml"><span class="toc-number">2.2.</span> <span class="toc-text">配置 _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到-GitHub"><span class="toc-number">2.3.</span> <span class="toc-text">部署到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">3.</span> <span class="toc-text">博客美化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">3.1.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">3.2.</span> <span class="toc-text">主题配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">4.</span> <span class="toc-text">博客维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-源代码"><span class="toc-number">4.1.</span> <span class="toc-text">Push 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-控制"><span class="toc-number">4.2.</span> <span class="toc-text">CI 控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">4.3.</span> <span class="toc-text">问题</span></a></li></ol></li></ol></nav></openaside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2020/12/20/CI部署Hexo博客/">&lt; CI 部署 Hexo 静态博客</a></div></section><footer><p>Copyright © 2020 - 2021 <a href="/." rel="nofollow">谢欣欣已经长大♥</a> | <strong><a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></strong><br>Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a>Theme with<a rel="nofollow" target="_blank" href="https://github.com/litreily/snark-hexo"> snark.</a></p></footer></div></div></div><script type="text/javascript" src="/js/search.js"></script><script type="text/javascript" src="/js/top.js"></script><script>var search_path = 'search.xml';
+<p><a href="https://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">搭建个人博客-hexo+github详细完整步骤</a><br><a href="https://theme-materialized.github.io/how-to-build-a-hexo-blog/" target="_blank" rel="noopener">Hexo博客搭建—从入门到精通</a><br><a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/#%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%86%99%E4%BD%9C" target="_blank" rel="noopener">hexo博客搭建指北</a><br><a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">小茗同学的博客园</a><br><a href="https://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">Hexo搭建Github静态博客</a><br><a href="https://luuman.github.io/2015/12/27/GitHubHexo/" target="_blank" rel="noopener">使用GitHub搭建Hexo博客</a></p>
+</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:kisunley@163.com">长大了的谢星星★</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/12/20/Hexo+Github搭建博客/">https://xiexinxing.github.io/2020/12/20/Hexo+Github搭建博客/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">随意转载，注明出处♥</span></div><!--    span.p-copytight-value= '本博客文章采用'--><!--        a(rel='nofollow', target='_blank', href='https://creativecommons.org/licenses/by-nc/4.0/')  CC BY-NC 4.0 --><!--        | 许可协议，转载请注明出处。 --><!--        a(href=config.url)= config.author + '的博客'--></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tags"></i><a href="/tags/Hexo/">Hexo</a><a href="/tags/Github/">Github</a><a href="/tags/Blog/">Blog</a></span></div><openaside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#博客搭建"><span class="toc-number">1.</span> <span class="toc-text">博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前期准备"><span class="toc-number">1.1.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化-Hexo"><span class="toc-number">1.2.</span> <span class="toc-text">初始化 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客写作"><span class="toc-number">1.3.</span> <span class="toc-text">博客写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客部署"><span class="toc-number">2.</span> <span class="toc-text">博客部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-GitHub-仓库"><span class="toc-number">2.1.</span> <span class="toc-text">配置 GitHub 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-config-yml"><span class="toc-number">2.2.</span> <span class="toc-text">配置 _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到-GitHub"><span class="toc-number">2.3.</span> <span class="toc-text">部署到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客美化"><span class="toc-number">3.</span> <span class="toc-text">博客美化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">3.1.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">3.2.</span> <span class="toc-text">主题配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#博客维护"><span class="toc-number">4.</span> <span class="toc-text">博客维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-源代码"><span class="toc-number">4.1.</span> <span class="toc-text">Push 源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-控制"><span class="toc-number">4.2.</span> <span class="toc-text">CI 控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-number">4.3.</span> <span class="toc-text">问题</span></a></li></ol></li></ol></nav></openaside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2020/12/20/CI部署Hexo博客/">&lt; CI 部署 Hexo 静态博客</a></div></section><footer><p>Copyright © 2020 - 2021 <a href="/." rel="nofollow">谢欣欣已经长大♥</a> | <strong><a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></strong><br>Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a>Theme with<a rel="nofollow" target="_blank" href="https://github.com/litreily/snark-hexo"> snark.</a></p></footer></div></div></div><script type="text/javascript" src="/js/search.js"></script><script type="text/javascript" src="/js/top.js"></script><script>var search_path = 'search.xml';
 if (search_path.length == 0) {
     search_path = 'search.xml';
 }
