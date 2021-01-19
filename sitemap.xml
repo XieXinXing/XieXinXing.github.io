@@ -2,27 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xiexinxing.github.io/tags/index.html</loc>
-    
-    <lastmod>2021-01-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xiexinxing.github.io/theme-sakura/index.html</loc>
-    
-    <lastmod>2021-01-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xiexinxing.github.io/video/index.html</loc>
-    
-    <lastmod>2021-01-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://xiexinxing.github.io/2020/12/20/CI%E9%83%A8%E7%BD%B2Hexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2021-01-19</lastmod>
@@ -79,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://xiexinxing.github.io/categories/index.html</loc>
+    <loc>https://xiexinxing.github.io/client/index.html</loc>
     
     <lastmod>2021-01-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xiexinxing.github.io/client/index.html</loc>
+    <loc>https://xiexinxing.github.io/categories/index.html</loc>
     
     <lastmod>2021-01-19</lastmod>
     
@@ -121,6 +100,13 @@
   </url>
   
   <url>
+    <loc>https://xiexinxing.github.io/rss/index.html</loc>
+    
+    <lastmod>2021-01-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xiexinxing.github.io/music/index.html</loc>
     
     <lastmod>2021-01-19</lastmod>
@@ -128,7 +114,21 @@
   </url>
   
   <url>
-    <loc>https://xiexinxing.github.io/rss/index.html</loc>
+    <loc>https://xiexinxing.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-01-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xiexinxing.github.io/theme-sakura/index.html</loc>
+    
+    <lastmod>2021-01-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xiexinxing.github.io/video/index.html</loc>
     
     <lastmod>2021-01-19</lastmod>
     
