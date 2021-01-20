@@ -62,8 +62,8 @@ blockquote {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 24px -30px;
-  padding: 0.5em 30px 0.5em 22px;
+  margin: 24px -40px;
+  padding: 0.5em 40px 0.5em 32px;
   border-left: 8px solid #ed2f6a; }
   blockquote ol, blockquote ul {
     padding-bottom: 1em; }
@@ -348,7 +348,7 @@ a, .m-nav a:hover, .l-post .p-desc a:hover, .ttl a:hover, .m-nav .dot, .l-pager 
   background-clip: content-box; }
 
 .l-post {
-  padding: 0 30px 64px;
+  padding: 0 40px 64px;
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -360,11 +360,11 @@ a, .m-nav a:hover, .l-post .p-desc a:hover, .ttl a:hover, .m-nav .dot, .l-pager 
 .l-post .p-desc, article.p-art {
   position: relative;
   top: 0;
-  left: -60px;
+  left: -80px;
   width: 100%;
   max-width: 860px;
   text-align: left;
-  padding: 30px;
+  padding: 40px;
   margin-bottom: 20px;
   background: #1c2938;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); }
@@ -397,7 +397,7 @@ a, .m-nav a:hover, .l-post .p-desc a:hover, .ttl a:hover, .m-nav .dot, .l-pager 
 /*page list of home page*/
 /*----------------------*/
 .l-pager-id {
-  padding: 20px 30px;
+  padding: 20px 40px;
   margin-bottom: 40px;
   background: #0d171f;
   background: rgba(0, 0, 0, 0.5); }
@@ -421,8 +421,8 @@ a, .m-nav a:hover, .l-post .p-desc a:hover, .ttl a:hover, .m-nav .dot, .l-pager 
     float: right; }
 
 .p-ext {
-  padding: 20px 30px;
-  max-width: 830px; }
+  padding: 20px 40px;
+  max-width: 820px; }
 
 /*----------------------*/
 /*style of post content */
@@ -532,7 +532,7 @@ a, .m-nav a:hover, .l-post .p-desc a:hover, .ttl a:hover, .m-nav .dot, .l-pager 
 /*style of ext info     */
 /*----------------------*/
 footer {
-  padding: 20px 30px; }
+  padding: 20px 40px; }
 
 .p-info span, .p-info a, footer p, footer a {
   color: #999; }
